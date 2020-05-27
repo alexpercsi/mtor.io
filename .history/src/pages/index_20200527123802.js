@@ -13,7 +13,7 @@ const IndexPage = () => {
       <Container>
         <div className="bg">
           <div className="hero-text">
-            <h4 className="text">Mentorship Platform</h4>
+            <h4 className="textrm"></h4>
             <h1 className="header">
               Get conected to your peers to learn or teach.
             </h1>

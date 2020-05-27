@@ -11,17 +11,13 @@ const IndexPage = () => {
         <title>mtor.io</title>
       </Helmet>
       <Container>
-        <div className="bg">
-          <div className="hero-text">
-            <h4 className="text">Mentorship Platform</h4>
-            <h1 className="header">
-              Get conected to your peers to learn or teach.
-            </h1>
-            <h2 className="sub-header">
-              Join a network that curate professional conections.
-            </h2>
-
-          </div>
+        <div className="hero-text">
+          <h1 className="header">
+            Get conected to your peers to learn or teach.
+          </h1>
+          <p className="sub-text">
+            Join a network that curate professional conections.
+          </p>
         </div>
       </Container>
     </Layout>

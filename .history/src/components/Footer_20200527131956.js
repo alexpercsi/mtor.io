@@ -15,16 +15,16 @@ const Footer = () => {
           </span>
           <p>&copy; 2020, mtor.io</p>
         </div>
-        <div className="links">
+        {/* <div className="links">
           <ul>
             <li>
-              <Link to="/terms&conditions">Terms/Conditions</Link>
+              <Link to="#">Terms/Conditions</Link>
             </li>
             <li>
               <Link to="/privacy">Privacy Policy</Link>
             </li>
             <li>
-              <Link to="/imprint">Imprint</Link>
+              <Link to="/imprint>Imprint</Link>
             </li>
           </ul>
         </div>
@@ -32,30 +32,24 @@ const Footer = () => {
           <ul>
             <li>
               <a href="#" title="twitter-social-media" target="blank">
-                <img
-                  src="../assets/images/social-twitter.png"
-                  alt="twitter-social-media"
-                />
+                <img src="../assets/images/social-twitter.png" alt="twitter-social-media" />
               </a>
             </li>
             <li>
               <a href="#" title="facebook-social-media" target="blank">
-                <img
-                  src="../assets/images/social-facebook.png"
-                  alt="facebook-social-media"
-                />
+                <img src="../assets/images/social-facebook.png"
+                  alt="facebook-social-media"/>
               </a>
             </li>
             <li>
               <a href="#" title="instagram-social-media">
-                <img
-                  src="../assets/images/instagram.svg"
+                <img src="../assets/images/instagram.svg"
                   alt="instagram-social-media"
                 />
               </a>
             </li>
           </ul>
-        </div>
+        </div> */
       </Container>
     </footer>
   );
