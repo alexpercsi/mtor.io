@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "gatsby";
 import Container from "components/Container";
 import logo from "assets/images/logo.png";
+import twitter from "assets/images/social-twitter.png";
+import insta from "assets/images/instagram.png";
+import facebook from "assets/images/social-facebook.png";
+
 
 const Footer = () => {
   return (
@@ -32,8 +36,9 @@ const Footer = () => {
           <ul>
             <li>
               <a href="#" title="twitter-social-media" target="blank">
+                
                 <img
-                  src="../assets/images/social-twitter.png"
+                  src="assets/images/social-twitter.png"
                   alt="twitter-social-media"
                 />
               </a>
@@ -41,7 +46,7 @@ const Footer = () => {
             <li>
               <a href="#" title="facebook-social-media" target="blank">
                 <img
-                  src="../assets/images/social-facebook.png"
+                  src=" assets/images/social-facebook.png"
                   alt="facebook-social-media"
                 />
               </a>
@@ -49,7 +54,7 @@ const Footer = () => {
             <li>
               <a href="#" title="instagram-social-media">
                 <img
-                  src="../assets/images/instagram.svg"
+                  src="../assets/images/instagram.png"
                   alt="instagram-social-media"
                 />
               </a>
