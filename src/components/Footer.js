@@ -6,64 +6,60 @@ import twitter from "assets/images/social-twitter.png";
 import insta from "assets/images/instagram.png";
 import facebook from "assets/images/social-facebook.png";
 
-
-const Footer = () => {
+ const Footer = () => {
   return (
-    <footer className="footer-wrapper">
+<footer className="footer-wrapper">
       <Container>
-        <div ClassName="logo_copyrights">
-          <span className="logo">
-            <Link to="/">
+         <div ClassName="logo_copyrights">
+           <span className="logo">
+           <Link to="/">
               <img src={logo} alt="mtor.io" />
-            </Link>
-          </span>
+             </Link>
+           </span>
           <p>&copy; 2020, mtor.io</p>
         </div>
         <div className="links">
-          <ul>
-            <li>
+           <ul>
+             <li>
               <Link to="/terms&conditions">Terms/Conditions</Link>
-            </li>
-            <li>
+             </li>
+             <li>
               <Link to="/privacy">Privacy Policy</Link>
-            </li>
-            <li>
-              <Link to="/imprint">Imprint</Link>
-            </li>
-          </ul>
+             </li>
+             <li>
+               <Link to="/imprint">Imprint</Link>
+             </li>
+           </ul>
         </div>
-        <div ClassName="social-links">
-          <ul>
-            <li>
+        
+         
+    <div ClassName="social-links">
+        <ul>
+           <li>
               <a href="#" title="twitter-social-media" target="blank">
-                
-                <img
-                  src="assets/images/social-twitter.png"
-                  alt="twitter-social-media"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#" title="facebook-social-media" target="blank">
-                <img
-                  src=" assets/images/social-facebook.png"
-                  alt="facebook-social-media"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#" title="instagram-social-media">
-                <img
-                  src="../assets/images/instagram.png"
-                  alt="instagram-social-media"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </Container>
-    </footer>
-  );
-};
-
+                <img src={twitter}
+                alt="twitter-social-media"/>
+             </a>
+          </li>
+          <li>
+               <a href="#" title="facebook-social-media" target="blank">
+                 <img src={facebook}
+                  alt="facebook-social-media"/>
+               </a>
+          </li>
+          <li>
+             <a href="#" title="instagram-social-media" target="blank">
+                <img 
+                  src={insta}
+                  alt="instagram-social-media"/>
+              </a>  
+         </li>
+      </ul>
+    </div>
+        
+  </Container>
+</footer>
+   );
+   };
 export default Footer;
+
