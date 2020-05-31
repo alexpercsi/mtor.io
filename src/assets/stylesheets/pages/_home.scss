@@ -1,39 +1,64 @@
-.bg-hero {
-  width: 100%;
-   // add vh instead of height
-  height:100vh;
-  // height:42rem;
-  color: white;
-  background-color: $base-color;
-  margin-top: 0;
+.welcome {
+  background: top center url("/images/welcome-bg-mobile.png");
+  background-size: 698px 789px;
+  height: 789px;
+
+  /* DELETE AFTER CONTENT */
+  margin-bottom: 500px;
+
+  .tagline {
+    color: $secondary-text;
+    margin-top: 50px;
+  }
+
+  .title {
+    width: 320px;
+  }
+
+  .subtitle {
+    width: 200px;
+  }
+
+  .welcomeActions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    text-align: center;
+    padding: 0 40px;
+
+    .btn:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
 }
-.hero-text{
-  // padding:25vh 0;
-  text-align: left;
+
+@media (min-width: 576px) {
+  .welcome {
+    background: top center url("/images/welcome-bg.png");
+    background-size: 3840px 775px;
+    height: 775px;
+
+    .tagline {
+      color: $secondary-text;
+      margin-top: 140px;
+    }
+
+    .title {
+      width: 540px;
+    }
+
+    .subtitle {
+      width: 487px;
+    }
+
+    .welcomeActions {
+      flex-direction: row;
+      margin-top: 57px;
+
+      .btn:not(:first-child) {
+        margin-left: 20px;
+        margin-top: 0px;
+      }
+    }
+  }
 }
-.hero-text > .intro
- {color: $secondary-text;}
-
-
-.header{
-font-weight: 800;
-// font-size: 42px;
-font-size:2vw;
-line-height: 120%;
-text-decoration:none;}
-
-.sub-header{
-  font-size:1.2vw;
-  font-weight: 300;
-}
-
-.hero-text> .buttons{
-  display: inline-block;
-  text-decoration: none;
- 
-}
-
-
-
-
-

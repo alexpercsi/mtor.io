@@ -2,13 +2,7 @@ footer {
   width: 100%;
   height: 160px;
   color: white;
-  background-color: $base-color;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    height: 160px;
-  }
+  background-color: $secondary-brand;
 
   .logo {
     img {
@@ -44,4 +38,10 @@ footer {
     font-weight: 300;
     margin-right: 0.2em;
   }
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 160px;
 }
