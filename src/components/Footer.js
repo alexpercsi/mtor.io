@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import Container from "components/Container";
 import logo from "assets/images/logo.png";
 import twitter from "assets/images/social-twitter.png";
-import insta from "assets/images/instagram.png";
+import insta from "assets/images/social-insta.png";
 import facebook from "assets/images/social-facebook.png";
 
  const Footer = () => {
@@ -35,19 +35,19 @@ import facebook from "assets/images/social-facebook.png";
          
     <div ClassName="social-links">
         <ul>
-           <li>
+           <li aria label="twitter-social-media">
               <a href="#" title="twitter-social-media" target="blank">
                 <img src={twitter}
                 alt="twitter-social-media"/>
              </a>
           </li>
-          <li>
+          <li aria label="facebook-social-media">
                <a href="#" title="facebook-social-media" target="blank">
                  <img src={facebook}
                   alt="facebook-social-media"/>
                </a>
           </li>
-          <li>
+          <li aria-label="instagram-social-media">
              <a href="#" title="instagram-social-media" target="blank">
                 <img 
                   src={insta}

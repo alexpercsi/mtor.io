@@ -17,7 +17,7 @@ gatsby build
 
 ## License
 
-Copyright 2019 mtor.io
+Copyright 2020 mtor.io
 
 The content of this repository is bound by the following licenses:
 

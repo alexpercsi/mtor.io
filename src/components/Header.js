@@ -20,10 +20,10 @@ const Header = () => {
               <Link to="#">join</Link>
             </li>
             <li>
-              <Link to="/privacy">how it works</Link>
+              <Link to="#">how it works</Link>
             </li>
             <li>
-              <Link to="/comunity">community</Link>
+              <Link to="#">community</Link>
             </li>
           </ul>
         </nav>
@@ -31,5 +31,6 @@ const Header = () => {
     </header>
   );
 };
+
 
 export default Header;
