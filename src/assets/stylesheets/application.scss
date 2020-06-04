@@ -20,7 +20,7 @@ main {
 
 h1 {
   font-weight: 800;
-  font-size: 42px;
+  font-size: $header1-fontsize;
   line-height: 120%;
 
   &.dark {
@@ -37,6 +37,18 @@ h2 {
   }
 }
 
+h4 {
+  font-size: $header4-fontsize;
+  color:$tertiary-text;
+}
+
+a {
+  color: $secondary-text;
+}
+.txt-purple {
+  color: $secondary-text;
+}
+
 .btn {
   border-radius: 6px;
   padding: 21px 29px;
@@ -48,4 +60,19 @@ h2 {
     background-color: $primary-brand;
     color: $secondary-brand;
   }
+}
+
+.txt-right {
+  text-align: right;
+}
+.txt-center {
+  text-align: center;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column {
+  flex-direction: column;
 }

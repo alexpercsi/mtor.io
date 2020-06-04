@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="links">
             <ul>
               <li>
-                <Link to="/terms&conditions">Terms/Conditions</Link>
+                <Link to="/terms">Terms/Conditions</Link>
               </li>
               <li>
                 <Link to="/privacy">Privacy Policy</Link>

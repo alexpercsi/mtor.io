@@ -24,7 +24,7 @@ ul {
 
 li {
   display: inline-block;
-  line-height: 60px;
+  // line-height: 16px;
 }
 
 a {
@@ -38,16 +38,11 @@ a:hover {
   text-decoration: underline;
 }
 
-p {
-  font-size: 2em;
-  font-weight: bold;
-  margin: 0;
-}
-
 .headerWrapper {
   display: flex;
   justify-content: space-between;
   height: 60px;
+  align-items: center;
 
   nav {
     li:not(:first-child)::before {

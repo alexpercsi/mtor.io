@@ -3,9 +3,6 @@
   background-size: 698px 789px;
   height: 789px;
 
-  /* DELETE AFTER CONTENT */
-  margin-bottom: 500px;
-
   .tagline {
     color: $secondary-text;
     margin-top: 50px;
@@ -31,7 +28,18 @@
     }
   }
 }
-
+.mission {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 176px;
+}
+.li {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+}
+// desktop
 @media (min-width: 576px) {
   .welcome {
     background: top center url("/images/welcome-bg.png");
@@ -51,6 +59,7 @@
       width: 487px;
     }
 
+
     .welcomeActions {
       flex-direction: row;
       margin-top: 57px;
@@ -61,4 +70,89 @@
       }
     }
   }
+}
+
+.how-mtor-works {
+  display: flex;
+  justify-content: space-around;
+}
+.community {
+  display: flex;
+}
+.community > div {
+  width: 50%;
+}
+
+.industries {
+  padding: 66px 0;
+  background-color: $background;
+}
+.industries ul {
+  width: 65%;
+  text-align: center;
+}
+
+.industries ul li {
+  margin-bottom: 20px;
+  color: $tertiary-text;
+  font-size: 20px;
+}
+.industries ul li:not(:first-child)::before {
+  content: "\2022";
+  color: $primary-brand;
+  padding: 0 10px;
+  // text-align: center;
+  // padding: 0 49px;
+}
+
+// .ul-center{
+//  text-align: center;}
+
+
+.diagonal-line {
+  background: $secondary-brand;
+  position: relative;
+  padding-top: 50px;
+}
+.fill-white {
+  fill: #fff;
+}
+// organizing
+.organizing {
+  padding: 0 125px;
+}
+
+//  section numbers
+.seperator {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.section-numbers {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.section-numbers h1 {
+  width: 40%;
+}
+.column {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.numbers {
+  color: $primary-brand;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+.section-numbers .list-item {
+  text-align: center;
+  display: flex;
+  width: 70px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
 }

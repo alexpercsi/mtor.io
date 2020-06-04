@@ -1,7 +1,15 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import Layout from "components/Layout";
-import Container from "components/Container";
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import Layout from 'components/Layout'
+import Container from 'components/Container'
+import stepOne from 'assets/images/illustration1.png'
+import stepTwo from 'assets/images/illustration2.png'
+import stepThree from 'assets/images/illustration3.png'
+import community from 'assets/images/illustration-community-desktop.png'
+import organizing from 'assets/images/illustration-organizing-ideas.png'
+import mentees from 'assets/images/mentees.png'
+import intro from 'assets/images/icon-intro.png'
+import members from 'assets/images/icon-total-members.png'
 
 const IndexPage = () => {
   return (
@@ -14,7 +22,7 @@ const IndexPage = () => {
           <div className="welcomeText">
             <h4 className="tagline">Mentorship Platform</h4>
             <h1 className="title dark">
-              Get conected to your peers to learn or teach
+              Get conected to your peers to learn or teach.
             </h1>
             <h2 className="subtitle dark">
               Join a network that curate professional conections.
@@ -31,49 +39,146 @@ const IndexPage = () => {
         </Container>
       </section>
 
-      {/* <Container>
-        <section className="bg-hero">
-          <div className="hero-text">
-            <h4 className="intro">Mentorship Platform</h4>
-            <h1 className="header">
-              Get conected to your peers to learn or teach
-            </h1>
-            <h2 className="sub-header">
-              Join a network that curate professional conections.
-            </h2>
-          </div>
-          <div className="buttons">
-            <a href="#" className="btn-accent">
+      <Container>
+        <div className="mission">
+          <h1 className="section-title">Mtor why and mission.</h1>
+          <h2 className="subtitle white">
+            Our mission is to make long lasting and meaningful connections with
+            peers that can elevate your knowledge and career outside of your
+            immediate circle.
+          </h2>
+          <h3>
+            Finding a mentor can be difficult for some, approaching someone and
+            asking for advice in not typically something we are taught to do,
+            which is why at mtor we make the process as simple for you as
+            possible - we exist to cut through the awkwardness and make real
+            connections based on your goals, allowing you to teach or be taught
+            in areas that interest you.
+          </h3>
+          <h2 ClassName=" subtitle white">
+            Increasing community and knowledge is what we stand for.
+          </h2>
+        </div>
+      </Container>
+
+      <Container>
+        <div className="section-two">
+          <h1 className="section-title txt-center">How mtor works</h1>
+          <ul className="how-mtor-works">
+            <li class="list-item">
+              <img src={stepOne} alt="" width="200" />
+              <h3 className="txt-center">
+                Share if you want to be a mentor or find a mentor.
+              </h3>
+            </li>
+            <li className="list-item">
+              <img src={stepTwo} alt="" width="200" />
+              <h3 className="txt-center">
+                Join a network that is dedicated to helping each other
+              </h3>
+            </li>
+            <li className="list-item">
+              <img src={stepThree} alt="" width="200" />
+              <h3 className="txt-center">
+                Help someone to Grow or grow yourself and enhance your career
+                like never before
+              </h3>
+            </li>
+          </ul>
+          <div class="flex-center">
+            <a href="/" className="btn primary">
               I want to join!
             </a>
-            <a href="#" className="btn">
-              About us.
-            </a>
           </div>
-          <img src={mainart} title="main-art" />
-          <section className="content-one">
-            <h2 class="section-title">
-              Quality designs made custom, on demand, just for you
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam.
+        </div>
+      </Container>
+      <Container>
+        <div className="community">
+          <div className="flex-center">
+            <img src={community} alt="" width="332" />
+          </div>
+          <div>
+            <h1 className="section-title txt-right">Community Engagement.</h1>
+            <h3 className="txt-right">
+              Once you have shared what you are looking for, you will be invited
+              to join our exclusive slack channel. From here you will be able to
+              network among the community, share your ideas and engage in
+              likeminded conversations throughout the channels.
+            </h3>
+            <p className="txt-right">
+              Behind the scenes, the team will look for suitable connections for
+              you based on the information you provide us. We will then invite
+              you and your partner to chat, how it evolves following this is
+              down to you. Online or offline you can choose to keep it on the
+              conversation on the channel or not, work around your schedule and
+              speak when you both have time.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-          </section>
-        </section>
-      </Container> */}
-    </Layout>
-  );
-};
+          </div>
+        </div>
+      </Container>
 
-export default IndexPage;
+      <div className="industries">
+        <Container>
+          <div className="flex-center flex-column">
+            <h1 className="txt-center">Industries where our mentors work</h1>
+            <ul>
+              <li>Green-tech</li>
+              <li>Consulting</li>
+              <li>Automotive and Mobility</li>
+              <li>Med-tech</li>
+              <li>E-Commerce</li>
+              <li>Fin-tech</li>
+              <li>many more</li>
+            </ul>
+          </div>
+        </Container>
+      </div>
+      <Container>
+        <div className="flex-center organizing">
+          <img src={organizing} alt="" width="332" />
+        </div>
+      </Container>
+
+      <div className="mtor-numbers diagonal-line">
+        <div className="seperator">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon class="fill-white" points="2560 0 0 0 0 100"></polygon>
+          </svg>
+        </div>
+        <Container>
+          <div className="section-numbers">
+            <h1>Mtor in numbers</h1>
+            <ul className="column">
+              <li className="list-item">
+                <img src={mentees} alt="" width="60" />
+                <span className="numbers">33</span>
+
+                <h4 className="txt-center">Mentors/ Mentees</h4>
+              </li>
+
+              <li className="list-item">
+                <img src={intro} alt="" width="60" />
+                <span className="numbers">45</span>
+                <h4 className="txt-center">Total Members</h4>
+              </li>
+              <li className="list-item">
+                <img src={members} alt="" width="60" />
+                <span className="numbers">15</span>
+                <h4 className="txt-center">Intros made</h4>
+              </li>
+            </ul>
+          </div>
+        </Container>
+      </div>
+    </Layout>
+  )
+}
+
+export default IndexPage
