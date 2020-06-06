@@ -1,9 +1,13 @@
-@import "variables";
-@import "components/__components";
-@import "pages/__pages";
+@import 'variables';
+@import 'components/__components';
+@import 'pages/__pages';
 
 body {
   font-family: Muli;
+  font-weight: 300;
+  color: $primary-text;
+  font-size: 16px;
+  line-height: 160%;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -19,9 +23,10 @@ main {
 }
 
 h1 {
-  font-weight: 800;
-  font-size: $header1-fontsize;
+  font-weight: bold;
+  font-size: 32px;
   line-height: 120%;
+  color: $secondary-brand;
 
   &.dark {
     color: #ffffff;
@@ -29,17 +34,27 @@ h1 {
 }
 
 h2 {
-  font-weight: 300;
-  font-size: 22px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 120%;
+  color: $secondary-brand;
+  margin-bottom: 48px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
   line-height: 160%;
+  color: $secondary-brand;
+
   &.dark {
     color: #ffffff;
   }
 }
 
 h4 {
-  font-size: $header4-fontsize;
-  color:$tertiary-text;
+  font-size: 16px;
+  color: $tertiary-text;
 }
 
 a {
@@ -74,6 +89,6 @@ a {
   justify-content: center;
 }
 .flex-column {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }

@@ -1,5 +1,5 @@
 .welcome {
-  background: top center url("/images/welcome-bg-mobile.png");
+  background: top center url('/images/welcome-bg-mobile.png');
   background-size: 698px 789px;
   height: 789px;
 
@@ -10,6 +10,7 @@
 
   .title {
     width: 320px;
+    font-weight: 800;
   }
 
   .subtitle {
@@ -33,7 +34,50 @@
   flex-direction: column;
   text-align: center;
   padding: 0 176px;
+  margin-top: 81px;
 }
+
+.howItWorksWrapper {
+  padding: 52px 0 78px;
+  background-color: $grey-background;
+
+  .joinButton {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    li {
+      flex-basis: 33%;
+      text-align: center;
+      padding: 0 12px;
+
+      &:not(:first-child) {
+        margin-top: 64px;
+      }
+    }
+  }
+
+  @media (min-width: 576px) {
+    ul {
+      flex-direction: row;
+      li {
+        &:not(:first-child) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
 .li {
   display: flex;
   justify-content: center;
@@ -42,7 +86,7 @@
 // desktop
 @media (min-width: 576px) {
   .welcome {
-    background: top center url("/images/welcome-bg.png");
+    background: top center url('/images/welcome-bg.png');
     background-size: 3840px 775px;
     height: 775px;
 
@@ -59,7 +103,6 @@
       width: 487px;
     }
 
-
     .welcomeActions {
       flex-direction: row;
       margin-top: 57px;
@@ -72,10 +115,6 @@
   }
 }
 
-.how-mtor-works {
-  display: flex;
-  justify-content: space-around;
-}
 .community {
   display: flex;
 }
@@ -85,7 +124,7 @@
 
 .industries {
   padding: 66px 0;
-  background-color: $background;
+  background-color: $grey-background;
 }
 .industries ul {
   width: 65%;
@@ -97,8 +136,9 @@
   color: $tertiary-text;
   font-size: 20px;
 }
+
 .industries ul li:not(:first-child)::before {
-  content: "\2022";
+  content: '\2022';
   color: $primary-brand;
   padding: 0 10px;
   // text-align: center;
@@ -107,7 +147,6 @@
 
 // .ul-center{
 //  text-align: center;}
-
 
 .diagonal-line {
   background: $secondary-brand;

@@ -24,9 +24,9 @@ const IndexPage = () => {
             <h1 className="title dark">
               Get conected to your peers to learn or teach.
             </h1>
-            <h2 className="subtitle dark">
+            <h3 className="subtitle dark">
               Join a network that curate professional conections.
-            </h2>
+            </h3>
           </div>
           <div className="welcomeActions">
             <a href="/" className="btn primary">
@@ -41,70 +41,68 @@ const IndexPage = () => {
 
       <Container>
         <div className="mission">
-          <h1 className="section-title">Mtor why and mission.</h1>
-          <h2 className="subtitle white">
+          <h2 className="section-title">Mtor why and mission.</h2>
+          <p className="subtitle white">
             Our mission is to make long lasting and meaningful connections with
             peers that can elevate your knowledge and career outside of your
             immediate circle.
-          </h2>
-          <h3>
+          </p>
+          <p>
             Finding a mentor can be difficult for some, approaching someone and
             asking for advice in not typically something we are taught to do,
             which is why at mtor we make the process as simple for you as
             possible - we exist to cut through the awkwardness and make real
             connections based on your goals, allowing you to teach or be taught
             in areas that interest you.
-          </h3>
-          <h2 ClassName=" subtitle white">
+          </p>
+          <p ClassName="subtitle white">
             Increasing community and knowledge is what we stand for.
-          </h2>
+          </p>
         </div>
       </Container>
 
-      <Container>
-        <div className="section-two">
-          <h1 className="section-title txt-center">How mtor works</h1>
-          <ul className="how-mtor-works">
-            <li class="list-item">
-              <img src={stepOne} alt="" width="200" />
-              <h3 className="txt-center">
-                Share if you want to be a mentor or find a mentor.
-              </h3>
-            </li>
-            <li className="list-item">
-              <img src={stepTwo} alt="" width="200" />
-              <h3 className="txt-center">
-                Join a network that is dedicated to helping each other
-              </h3>
-            </li>
-            <li className="list-item">
-              <img src={stepThree} alt="" width="200" />
-              <h3 className="txt-center">
-                Help someone to Grow or grow yourself and enhance your career
-                like never before
-              </h3>
-            </li>
-          </ul>
-          <div class="flex-center">
-            <a href="/" className="btn primary">
-              I want to join!
-            </a>
+      <div className="howItWorksWrapper">
+        <Container>
+          <div>
+            <h2>How mtor works</h2>
+            <ul>
+              <li>
+                <img src={stepOne} alt="" height="210" />
+                <h3>Share if you want to be a mentor or find a mentor.</h3>
+              </li>
+              <li>
+                <img src={stepTwo} alt="" height="210" />
+                <h3>Join a network that is dedicated to helping each other</h3>
+              </li>
+              <li>
+                <img src={stepThree} alt="" height="210" />
+                <h3>
+                  Help someone to Grow or grow yourself and enhance your career
+                  like never before
+                </h3>
+              </li>
+            </ul>
+            <div className="joinButton">
+              <a href="/" className="btn primary">
+                I want to join!
+              </a>
+            </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
       <Container>
         <div className="community">
           <div className="flex-center">
             <img src={community} alt="" width="332" />
           </div>
           <div>
-            <h1 className="section-title txt-right">Community Engagement.</h1>
-            <h3 className="txt-right">
+            <h2 className="section-title txt-right">Community Engagement.</h2>
+            <p className="txt-right">
               Once you have shared what you are looking for, you will be invited
               to join our exclusive slack channel. From here you will be able to
               network among the community, share your ideas and engage in
               likeminded conversations throughout the channels.
-            </h3>
+            </p>
             <p className="txt-right">
               Behind the scenes, the team will look for suitable connections for
               you based on the information you provide us. We will then invite
@@ -120,7 +118,7 @@ const IndexPage = () => {
       <div className="industries">
         <Container>
           <div className="flex-center flex-column">
-            <h1 className="txt-center">Industries where our mentors work</h1>
+            <h2 className="txt-center">Industries where our mentors work</h2>
             <ul>
               <li>Green-tech</li>
               <li>Consulting</li>
@@ -154,7 +152,7 @@ const IndexPage = () => {
         </div>
         <Container>
           <div className="section-numbers">
-            <h1>Mtor in numbers</h1>
+            <h2>Mtor in numbers</h2>
             <ul className="column">
               <li className="list-item">
                 <img src={mentees} alt="" width="60" />
@@ -181,4 +179,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage;
+export default IndexPage
