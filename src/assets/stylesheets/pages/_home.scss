@@ -15,12 +15,13 @@
 
   .subtitle {
     width: 200px;
+    font-weight: 200;
   }
 
   .welcomeActions {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 280px;
     text-align: center;
     padding: 0 40px;
 
@@ -33,8 +34,14 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 0 176px;
+  // padding: 0 176px;
   margin-top: 81px;
+  margin-bottom: 50px;
+  .subtitle {
+    font-size: 22px;
+    line-height: 1.8rem;
+    font-weight: 300;
+  }
 }
 
 .howItWorksWrapper {
@@ -44,10 +51,6 @@
   .joinButton {
     text-align: center;
     margin-top: 60px;
-  }
-
-  h2 {
-    text-align: center;
   }
 
   ul {
@@ -110,25 +113,66 @@
       .btn:not(:first-child) {
         margin-left: 20px;
         margin-top: 0px;
+        text-decoration: none;
       }
     }
   }
 }
 
+// community
 .community {
   display: flex;
-}
-.community > div {
-  width: 50%;
+  flex-direction: column;
+  .flex-center {
+    flex-direction: column;
+  }
+  .comunity-txt {
+    .txt-right {
+      text-align: left;
+    }
+    .section-title {
+      display: none;
+    }
+  }
 }
 
+@media (min-width: 576px) {
+  .community {
+    flex-direction: row;
+
+    .flex-center {
+      flex-direction: column;
+      .section-title {
+        visibility: hidden;
+      }
+    }
+  }
+  .community h2 {
+    text-align: right;
+    width: 100%;
+  }
+  .community > div {
+    width: 50%;
+  }
+}
+
+// industries
 .industries {
   padding: 66px 0;
   background-color: $grey-background;
 }
 .industries ul {
   width: 65%;
-  text-align: center;
+}
+@media (min-width: 576px) {
+  .industries ul {
+    text-align: center;
+  }
+
+  .industries ul li {
+    display: inline-block;
+    padding-left: 10px;
+  }
 }
 
 .industries ul li {
@@ -137,16 +181,17 @@
   font-size: 20px;
 }
 
-.industries ul li:not(:first-child)::before {
+.industries ul li:not(:last-child)::before {
   content: '\2022';
   color: $primary-brand;
-  padding: 0 10px;
-  // text-align: center;
-  // padding: 0 49px;
+  padding-right: 10px;
 }
-
-// .ul-center{
-//  text-align: center;}
+.industries ul li:last-child::before {
+  content: '\002B';
+  color: $primary-brand;
+  padding-right: 10px;
+  font-weight: 900;
+}
 
 .diagonal-line {
   background: $secondary-brand;
@@ -158,7 +203,8 @@
 }
 // organizing
 .organizing {
-  padding: 0 125px;
+  height: 300px;
+  // padding: 0 125px;
 }
 
 //  section numbers
@@ -166,6 +212,12 @@
   top: 0;
   left: 0;
   position: absolute;
+  visibility: hidden;
+}
+@media (min-width: 576px) {
+  .separator {
+    visibility: visible;
+  }
 }
 .section-numbers {
   display: flex;

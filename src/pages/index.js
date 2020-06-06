@@ -55,7 +55,7 @@ const IndexPage = () => {
             connections based on your goals, allowing you to teach or be taught
             in areas that interest you.
           </p>
-          <p ClassName="subtitle white">
+          <p className="subtitle white">
             Increasing community and knowledge is what we stand for.
           </p>
         </div>
@@ -93,10 +93,11 @@ const IndexPage = () => {
       <Container>
         <div className="community">
           <div className="flex-center">
+            <h2 className="section-title">Community Engagement</h2>
             <img src={community} alt="" width="332" />
           </div>
-          <div>
-            <h2 className="section-title txt-right">Community Engagement.</h2>
+          <div className="comunity-txt">
+            <h2 className="section-title">Community Engagement</h2>
             <p className="txt-right">
               Once you have shared what you are looking for, you will be invited
               to join our exclusive slack channel. From here you will be able to

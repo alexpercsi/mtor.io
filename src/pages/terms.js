@@ -319,24 +319,24 @@ const TermsPage = () => {
       Distributor) to access the Services: </p>
                       
       <p>(a) The licence granted to you
-                for our mobile application is limited to a non-transferable licence to
-                use the application on a device that utilizes the Apple iOS or Android
-                operating system, as applicable, and in accordance with the usage
+      for our mobile application is limited to a non-transferable licence to
+      use the application on a device that utilizes the Apple iOS or Android
+      operating system, as applicable, and in accordance with the usage
     rules set forth in the applicable App Distributor terms of service; </p>
       <p>(b) We are responsible for providing any maintenance and support
       services with respect to the mobile application as specified in these
-                Terms and Conditions or as otherwise required under applicable law.
-                You acknowledge that each App Distributor has no obligation whatsoever
-                to furnish any maintenance and support services with respect to the
+        Terms and Conditions or as otherwise required under applicable law.
+        You acknowledge that each App Distributor has no obligation whatsoever
+        to furnish any maintenance and support services with respect to the
     mobile application;
       </p> 
        <p> (c) In the event of any failure of the mobile
-                  application to conform to any applicable warranty, you may notify an
-                  App Distributor, and the App Distributor, in accordance with its terms
-                  and policies, may refund the purchase price, if any, paid for the
-                  mobile application, and to the maximum extent permitted by applicable
-                  law, an App Distributor will have no other warranty obligation
-      whatsoever with respect to the mobile application; 
+          application to conform to any applicable warranty, you may notify an
+          App Distributor, and the App Distributor, in accordance with its terms
+          and policies, may refund the purchase price, if any, paid for the
+          mobile application, and to the maximum extent permitted by applicable
+          law, an App Distributor will have no other warranty obligation
+          whatsoever with respect to the mobile application; 
       </p>
        <p> (d) You represent
           and warrant that (i) you are not located in a country that is subject
@@ -346,8 +346,8 @@ const TermsPage = () => {
           parties; 
         </p>
           <p>(e) You must comply with applicable third party terms of
-                      agreement when using the mobile application, e.g., if you have a VoIP
-                      application, then you must not be in breach of their wireless data
+            agreement when using the mobile application, e.g., if you have a VoIP
+            application, then you must not be in breach of their wireless data
           service agreement when using the mobile application; and 
         </p>
           <p> (f) You

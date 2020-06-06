@@ -39,6 +39,7 @@ h2 {
   line-height: 120%;
   color: $secondary-brand;
   margin-bottom: 48px;
+  text-align: center;
 }
 
 h3 {
@@ -59,6 +60,7 @@ h4 {
 
 a {
   color: $secondary-text;
+  text-decoration:none;
 }
 .txt-purple {
   color: $secondary-text;
@@ -91,4 +93,8 @@ a {
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+
+img {
+  max-width: 100%;
 }

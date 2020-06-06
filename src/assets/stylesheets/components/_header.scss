@@ -7,6 +7,10 @@ header {
   position: fixed;
   left: 0%;
   top: 0%;
+
+  li {
+    display: inline-block;
+  }
 }
 
 .logo {
@@ -22,21 +26,9 @@ ul {
   padding: 0;
 }
 
-li {
-  display: inline-block;
-  // line-height: 16px;
-}
 
-a {
-  color: white;
-  padding: 0 0.5em;
-  text-decoration: none;
-  font-weight: bold;
-}
 
-a:hover {
-  text-decoration: underline;
-}
+
 
 .headerWrapper {
   display: flex;
@@ -45,10 +37,21 @@ a:hover {
   align-items: center;
 
   nav {
+        a {
+         color: white;
+         padding: 0 0.5em;
+       text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
     li:not(:first-child)::before {
       content: '\2022';
       color: $primary-brand;
       padding: 0 10px;
+  
     }
   }
 
