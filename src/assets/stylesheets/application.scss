@@ -60,7 +60,7 @@ h4 {
 
 a {
   color: $secondary-text;
-  text-decoration:none;
+  text-decoration: none;
 }
 .txt-purple {
   color: $secondary-text;
@@ -94,7 +94,15 @@ a {
   display: flex;
   flex-direction: column;
 }
+.txt-white {
+  color: white;
+}
 
 img {
   max-width: 100%;
+}
+
+// privacy
+.i-want-to-join {
+  padding: 30px 0;
 }

@@ -71,7 +71,9 @@ const PrivacyPage = () => {
             <a href="#controls">CONTROLS FOR DO-NOT-TRACK FEATURES</a>
           </li>
           <li>
-            <a href="#do-california">DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</a>
+            <a href="#do-california">
+              DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
+            </a>
           </li>
           <li>
             <a href="#do-we-make">DO WE MAKE UPDATES TO THIS POLICY?</a>
@@ -152,59 +154,89 @@ const PrivacyPage = () => {
           experience. We may use and store this information in aggregated and
           anonymized form so that it is not associated with individual end users
           and does not include personal information. We will not use
-          identifiable personal information without your consent. </p>
-          
-        <h3 id="will-your-information-will-be-shared-with-anyone">WILL YOUR INFORMATION BE SHARED WITH ANYONE?</h3>
-        <p><strong>In Short:</strong> We only share information with your consent, to comply with laws, to provide you
-          with services, to protect your rights, or to fulfill business
-          obligations. We may process or share data based on the following legal
-          basis:</p>
-          
-        <p><strong>- Consent:</strong> We may process your data if you have given us
-          specific consent to use your personal information in a specific
-          purpose.</p>
+          identifiable personal information without your consent.{' '}
+        </p>
 
-        <p><strong>- Legitimate Interests:</strong> We may process your data when it is
-          reasonably necessary to achieve our legitimate business interests.</p>
-          
-        <p><strong>- Performance of a Contract:</strong> Where we have entered into a contract with
-          you, we may process your personal information to fulfill the terms of
-          our contract.</p>
-          
-        <p><strong>- Legal Obligations:</strong> We may disclose your information
+        <h3 id="will-your-information-will-be-shared-with-anyone">
+          WILL YOUR INFORMATION BE SHARED WITH ANYONE?
+        </h3>
+        <p>
+          <strong>In Short:</strong> We only share information with your
+          consent, to comply with laws, to provide you with services, to protect
+          your rights, or to fulfill business obligations. We may process or
+          share data based on the following legal basis:
+        </p>
+
+        <p>
+          <strong>- Consent:</strong> We may process your data if you have given
+          us specific consent to use your personal information in a specific
+          purpose.
+        </p>
+
+        <p>
+          <strong>- Legitimate Interests:</strong> We may process your data when
+          it is reasonably necessary to achieve our legitimate business
+          interests.
+        </p>
+
+        <p>
+          <strong>- Performance of a Contract:</strong> Where we have entered
+          into a contract with you, we may process your personal information to
+          fulfill the terms of our contract.
+        </p>
+
+        <p>
+          <strong>- Legal Obligations:</strong> We may disclose your information
           where we are legally required to do so in order to comply with
           applicable law, governmental requests, a judicial proceeding, court
           order, or legal process, such as in response to a court order or a
           subpoena (including in response to public authorities to meet national
-          security or law enforcement requirements).</p>
-          
-        <p><strong>- Vital Interests:</strong> We may disclose your information where we believe it is necessary to
-          investigate, prevent, or take action regarding potential violations of
-          our policies, suspected fraud, situations involving potential threats
-          to the safety of any person and illegal activities, or as evidence in
-          litigation in which we are involved.</p>
-          
-        <p>More specifically, we may need to process your data or share your personal information in the
-          following situations:</p>
-          
-        <p><strong>Business Transfers.</strong> We may share or transfer
-          your information in connection with, or during negotiations of, any
-          merger, sale of company assets, financing, or acquisition of all or a
-          portion of our business to another company.</p>
-          
-        <p><strong>Third-Party Advertisers.</strong> We may use third-party advertising companies to serve ads
-          when you visit the Services. These companies may use information about
-          your visits to our Website(s) and other websites that are contained in
-          web cookies and other tracking technologies in order to provide
-          advertisements about goods and services of interest to you.</p>
-          
-        <p><strong>Business Partners.</strong> We may share your information with our business partners to
-          offer you certain products, services or promotions.</p>
-          
-        <h3 id="how-long-do-we-keep-your-information">4. HOW LONG DO WE KEEP YOUR INFORMATION?</h3>
-          
-        <p><strong>In Short:</strong>  We keep your information for as
-          long as necessary to fulfill the purposes outlined in this privacy
+          security or law enforcement requirements).
+        </p>
+
+        <p>
+          <strong>- Vital Interests:</strong> We may disclose your information
+          where we believe it is necessary to investigate, prevent, or take
+          action regarding potential violations of our policies, suspected
+          fraud, situations involving potential threats to the safety of any
+          person and illegal activities, or as evidence in litigation in which
+          we are involved.
+        </p>
+
+        <p>
+          More specifically, we may need to process your data or share your
+          personal information in the following situations:
+        </p>
+
+        <p>
+          <strong>Business Transfers.</strong> We may share or transfer your
+          information in connection with, or during negotiations of, any merger,
+          sale of company assets, financing, or acquisition of all or a portion
+          of our business to another company.
+        </p>
+
+        <p>
+          <strong>Third-Party Advertisers.</strong> We may use third-party
+          advertising companies to serve ads when you visit the Services. These
+          companies may use information about your visits to our Website(s) and
+          other websites that are contained in web cookies and other tracking
+          technologies in order to provide advertisements about goods and
+          services of interest to you.
+        </p>
+
+        <p>
+          <strong>Business Partners.</strong> We may share your information with
+          our business partners to offer you certain products, services or
+          promotions.
+        </p>
+
+        <h3 id="how-long-do-we-keep-your-information">
+          4. HOW LONG DO WE KEEP YOUR INFORMATION?
+        </h3>
+
+        <p>
+          <strong>In Short:</strong>  We keep your information for as long as
+          necessary to fulfill the purposes outlined in this privacy
           policy unless otherwise required by law. We will only keep your
           personal information for as long as it is necessary for the purposes
           set out in this privacy policy, unless a longer retention period is
@@ -215,23 +247,28 @@ const PrivacyPage = () => {
           either delete or anonymize it, or, if this is not possible (for
           example, because your personal information has been stored in backup
           archives), then we will securely store your personal information and
-          isolate it from any further processing until deletion is possible.</p>
-          
+          isolate it from any further processing until deletion is possible.
+        </p>
+
         <h3 id="do-we-collect">5. DO WE COLLECT INFORMATION FROM MINORS?</h3>
-          
-        <p><strong> In Short:</strong>  We do not knowingly collect data from or market to children under 18 years of age. We do
-          not knowingly solicit data from or market to children under 18 years
-          of age. By using the Services, you represent that you are at least 18
-          or that you are the parent or guardian of such a minor and consent to
-          such minor dependent’s use of the Services. If we learn that personal
-          information from users less than 18 years of age has been collected,
-          we will deactivate the account and take reasonable measures to
-          promptly delete such data from our records. If you become aware of any
-          data we have collected from children under age 18, please contact us
-          at <a href="mailto:support@mtor.io">support@mtor.io</a>.</p>
+
+        <p>
+          <strong> In Short:</strong>  We do not knowingly collect data from or
+          market to children under 18 years of age. We do not knowingly solicit
+          data from or market to children under 18 years of age. By using the
+          Services, you represent that you are at least 18 or that you are the
+          parent or guardian of such a minor and consent to such minor
+          dependent’s use of the Services. If we learn that personal information
+          from users less than 18 years of age has been collected, we will
+          deactivate the account and take reasonable measures to promptly delete
+          such data from our records. If you become aware of any data we have
+          collected from children under age 18, please contact us at{' '}
+          <a href="mailto:support@mtor.io">support@mtor.io</a>.
+        </p>
 
         <h3 id="what-are-your">6. WHAT ARE YOUR PRIVACY RIGHTS?</h3>
-        <p><strong>In Short: </strong> In some regions, such as the European
+        <p>
+          <strong>In Short: </strong> In some regions, such as the European
           Economic Area, you have rights that allow you greater access to and
           control over your personal information. You may review, change, or
           terminate your account at any time. In some regions (like the European
@@ -247,49 +284,61 @@ const PrivacyPage = () => {
           laws. If we are relying on your consent to process your personal
           information, you have the right to withdraw your consent at any time.
           Please note however that this will not affect the lawfulness of the
-          processing before its withdrawal.</p>
-          
-        <p>If you are resident in the European
-        Economic Area and you believe we are unlawfully processing your
-        personal information, you also have the right to complain to your
-        local data protection supervisory authority. You can find their
-        contact details here:
-          <a href="http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm">http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm</a>.
-          </p>
-          
+          processing before its withdrawal.
+        </p>
+
+        <p>
+          If you are resident in the European Economic Area and you believe we
+          are unlawfully processing your personal information, you also have the
+          right to complain to your local data protection supervisory authority.
+          You can find their contact details here:
+          <a href="http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm">
+            http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm
+          </a>
+          .
+        </p>
+
         <h3 id="data-breach">7. DATA BREACH</h3>
-        <p>A privacy breach occurs when there is unauthorized
-        access to or collection, use, disclosure or disposal of personal
-        information. You will be notified about data breaches when Mtor.io
-        believes you are likely to be at risk or serious harm. For example, a
-        data breach may be likely to result in serious financial harm or harm
-        to your mental or physical well-being. In the event that Mtor.io
-        becomes aware of a security breach which has resulted or may result in
-        unauthorized access, use or disclosure of personal information Mtor.io
-        will promptly investigate the matter and notify the applicable
-        Supervisory Authority not later than 72 hours after having become
-        aware of it, unless the personal data breach is unlikely to result in
-          a risk to the rights and freedoms of natural persons. </p>
-          
+        <p>
+          A privacy breach occurs when there is unauthorized access to or
+          collection, use, disclosure or disposal of personal information. You
+          will be notified about data breaches when Mtor.io believes you are
+          likely to be at risk or serious harm. For example, a data breach may
+          be likely to result in serious financial harm or harm to your mental
+          or physical well-being. In the event that Mtor.io becomes aware of a
+          security breach which has resulted or may result in unauthorized
+          access, use or disclosure of personal information Mtor.io will
+          promptly investigate the matter and notify the applicable Supervisory
+          Authority not later than 72 hours after having become aware of it,
+          unless the personal data breach is unlikely to result in a risk to the
+          rights and freedoms of natural persons.{' '}
+        </p>
+
         <h3 id="controls">8. CONTROLS FOR DO-NOT-TRACK FEATURES</h3>
-        <p> Most web browsers and some mobile operating
-        systems and mobile applications include a Do-Not-Track (“DNT”) feature
-        or setting you can activate to signal your privacy preference not to
-        have data about your online browsing activities monitored and
-        collected. No uniform technology standard for recognizing and
-        implementing DNT signals has been finalized. As such, we do not
-        currently respond to DNT browser signals or any other mechanism that
-        automatically communicates your choice not to be tracked online. If a
-        standard for online tracking is adopted that we must follow in the
-        future, we will inform you about that practice in a revised version of
-        this privacy policy.
-          </p>
-          
-          
-        <h3 id="do-california">9. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY
-          RIGHTS?</h3>
-        <p><strong>In Short:</strong><i>Yes, if you are a resident of California, you are
-          granted specific rights regarding access to your personal information.</i>
+        <p>
+          {' '}
+          Most web browsers and some mobile operating systems and mobile
+          applications include a Do-Not-Track (“DNT”) feature or setting you can
+          activate to signal your privacy preference not to have data about your
+          online browsing activities monitored and collected. No uniform
+          technology standard for recognizing and implementing DNT signals has
+          been finalized. As such, we do not currently respond to DNT browser
+          signals or any other mechanism that automatically communicates your
+          choice not to be tracked online. If a standard for online tracking is
+          adopted that we must follow in the future, we will inform you about
+          that practice in a revised version of this privacy policy.
+        </p>
+
+        <h3 id="do-california">
+          9. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
+        </h3>
+        <p>
+          <strong>In Short:</strong>{' '}
+          <i>Yes, if you are a resident of California, you are granted specific
+            rights regarding access to your personal information.
+          </i>
+        </p>
+        <p>
           California Civil Code Section 1798.83, also known as the “Shine The
           Light” law, permits our users who are California residents to request
           and obtain from us, once a year and free of charge, information about
@@ -307,27 +356,39 @@ const PrivacyPage = () => {
           account and a statement that you reside in California. We will make
           sure the data is not publicly displayed on the Services, but please be
           aware that the data may not be completely or comprehensively removed
-          from our systems. </p>
-          
+          from our systems.{' '}
+        </p>
+
         <h3 id="do-we-make">10. DO WE MAKE UPDATES TO THIS POLICY?</h3>
-        <p><strong>In Short:  </strong><i>Yes, we will update this policy as necessary to stay compliant
-          with relevant laws.</i> We may update this privacy policy from time to
-          time. The updated version will be indicated by an updated “Revised”
-          date and the updated version will be effective as soon as it is
-          accessible. If we make material changes to this privacy policy, we may
-          notify you either by prominently posting a notice of such changes or
-          by directly sending you a notification. We encourage you to review
-          this privacy policy frequently to be informed of how we are protecting
-          your information.
+        <p>
+          <strong>In Short: </strong> <i>Yes, we will update this policy as necessary to stay compliant with
+            relevant laws.
+          </i>
+        </p>
+        <p>
+          We may update this privacy policy from time to time. The updated
+          version will be indicated by an updated “Revised” date and the updated
+          version will be effective as soon as it is accessible. If we make
+          material changes to this privacy policy, we may notify you either by
+          prominently posting a notice of such changes or by directly sending
+          you a notification. We encourage you to review this privacy
+          policy frequently to be informed of how we are protecting your
+          information.
         </p>
 
         <h3 id="how-can-you">11. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</h3>
 
         <p>
           If you have questions or comments about this policy, you may email us
-          at
-          <a href="mailto:support@mtor.io">support@mtor.io</a> or by post to:
-          Mtor.io<br />  Lloyd-G.-Wells-Str. 20<br />  Berlin<br />  14163 Germany
+          at <a href="mailto:support@mtor.io">support@mtor.io</a> or by post to
+          <br />
+          Mtor.io
+          <br />
+          Lloyd-G.-Wells-Str. 20
+          <br />
+          Berlin
+          <br />
+          14163 Germany
         </p>
 
         <h3 id="how-can-you" className="txt-purple">
@@ -339,22 +400,22 @@ const PrivacyPage = () => {
           access to the personal information we collect from you, change that
           information, or delete it in some circumstances. To request to review,
           update, or delete your personal information, please submit a request
-          form by clicking here. We will respond to your request within 30 days.
+          form by clicking <a href="#">here</a>. We will respond to your request
+          within 30 days.
         </p>
 
         <p>
-          * This privacy policy was created using
+          * This privacy policy was created using{' '}
           <a href="https://termly.io/">Termly’s Privacy Policy Generator.</a>
         </p>
-        <div className="flex-center">
-               <a href="/" className="btn primary">
-              I want to join!
-               </a>
-        </div>  
-        
+        <div className="flex-center i-want-to-join">
+          <a href="/" className="btn primary">
+            I want to join!
+          </a>
+        </div>
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
-export default PrivacyPage;
+export default PrivacyPage

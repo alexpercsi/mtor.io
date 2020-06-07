@@ -1,15 +1,7 @@
 footer {
   width: 100%;
-  height: 160px;
   color: white;
   background-color: $secondary-brand;
-
-  .logo {
-    img {
-      height: 34px;
-      margin-top: 13px;
-    }
-  }
 
   ul {
     list-style: none;
@@ -19,7 +11,6 @@ footer {
 
   li {
     display: inline-block;
-    line-height: 60px;
   }
 
   a {
@@ -39,9 +30,56 @@ footer {
     margin-right: 0.2em;
   }
 }
+.social-links {
+  flex-shrink: 0;
+}
 
+.footer-logo {
+  background: url('/images/logo-mtor.png');
+  background-size: 115px 40px;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 40px;
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .footer-logo {
+    width: 115px;
+  }
+}
+.divider {
+  border-top: 0.3px solid rgba(255, 255, 255, 0.25);
+  margin: 0 100px;
+}
 .footerWrapper {
+  padding: 45px 0;
   display: flex;
   justify-content: space-between;
-  height: 160px;
+  flex-wrap: wrap;
+  .links {
+    width: 100%;
+    order: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul li {
+      display: block;
+      text-align: center;
+      padding: 5px 0;
+    }
+  }
+}
+@media (min-width: 576px) {
+  .footerWrapper {
+    flex-wrap: nowrap;
+    .links {
+      order: 0;
+      ul li {
+        display: inline-block;
+        text-align: center;
+        padding: 5px 0;
+      }
+    }
+  }
 }

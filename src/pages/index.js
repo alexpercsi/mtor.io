@@ -92,26 +92,27 @@ const IndexPage = () => {
       </div>
       <Container>
         <div className="community">
-          <div className="flex-center">
-            <h2 className="section-title">Community Engagement</h2>
-            <img src={community} alt="" width="332" />
-          </div>
-          <div className="comunity-txt">
-            <h2 className="section-title">Community Engagement</h2>
-            <p className="txt-right">
-              Once you have shared what you are looking for, you will be invited
-              to join our exclusive slack channel. From here you will be able to
-              network among the community, share your ideas and engage in
-              likeminded conversations throughout the channels.
-            </p>
-            <p className="txt-right">
-              Behind the scenes, the team will look for suitable connections for
-              you based on the information you provide us. We will then invite
-              you and your partner to chat, how it evolves following this is
-              down to you. Online or offline you can choose to keep it on the
-              conversation on the channel or not, work around your schedule and
-              speak when you both have time.
-            </p>
+          <h2 className="section-title">Community Engagement</h2>
+          <div className="community-content">
+            <div className="flex-center img-container">
+              <img src={community} alt="" width="332" />
+            </div>
+            <div className="comunity-txt">
+              <p>
+                Once you have shared what you are looking for, you will be
+                invited to join our exclusive slack channel. From here you will
+                be able to network among the community, share your ideas and
+                engage in likeminded conversations throughout the channels.
+              </p>
+              <p>
+                Behind the scenes, the team will look for suitable connections
+                for you based on the information you provide us. We will then
+                invite you and your partner to chat, how it evolves following
+                this is down to you. Online or offline you can choose to keep it
+                on the conversation on the channel or not, work around your
+                schedule and speak when you both have time.
+              </p>
+            </div>
           </div>
         </div>
       </Container>
@@ -153,24 +154,24 @@ const IndexPage = () => {
         </div>
         <Container>
           <div className="section-numbers">
-            <h2>Mtor in numbers</h2>
+            <h2 className="txt-white">Mtor in numbers</h2>
             <ul className="column">
               <li className="list-item">
                 <img src={mentees} alt="" width="60" />
                 <span className="numbers">33</span>
 
-                <h4 className="txt-center">Mentors/ Mentees</h4>
+                <h4 className="txt-center txt-white">Mentors/ Mentees</h4>
               </li>
 
               <li className="list-item">
                 <img src={intro} alt="" width="60" />
                 <span className="numbers">45</span>
-                <h4 className="txt-center">Total Members</h4>
+                <h4 className="txt-center txt-white">Total Members</h4>
               </li>
               <li className="list-item">
                 <img src={members} alt="" width="60" />
                 <span className="numbers">15</span>
-                <h4 className="txt-center">Intros made</h4>
+                <h4 className="txt-center txt-white">Intros made</h4>
               </li>
             </ul>
           </div>

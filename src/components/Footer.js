@@ -1,22 +1,20 @@
-import React from "react";
-import { Link } from "gatsby";
-import Container from "components/Container";
-import logo from "assets/images/logo.png";
-import twitter from "assets/images/social-twitter.png";
-import insta from "assets/images/social-insta.png";
-import facebook from "assets/images/social-facebook.png";
+import React from 'react'
+import { Link } from 'gatsby'
+import Container from 'components/Container'
+import twitter from 'assets/images/social-twitter.png'
+import insta from 'assets/images/social-insta.png'
+import facebook from 'assets/images/social-facebook.png'
 
 const Footer = () => {
   return (
-    <footer className="footer-wrapper">
+    <footer>
       <Container>
+        <div className="divider"></div>
         <div className="footerWrapper">
-          <div className="logo_copyrights">
-            <span className="logo">
-              <Link to="/">
-                <img src={logo} alt="mtor.io" />
-              </Link>
-            </span>
+          <div>
+            <Link to="/">
+              <span className="footer-logo"></span>
+            </Link>
             <p>&copy; 2020, mtor.io</p>
           </div>
           <div className="links">
@@ -33,7 +31,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div ClassName="social-links">
+          <div className="social-links">
             <ul>
               <li aria label="twitter-social-media">
                 <a href="/" title="twitter-social-media" target="blank">
@@ -55,6 +53,6 @@ const Footer = () => {
         </div>
       </Container>
     </footer>
-  );
-};
-export default Footer;
+  )
+}
+export default Footer

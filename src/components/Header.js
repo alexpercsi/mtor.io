@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react'
+import { Link } from 'gatsby'
 
-import Container from "components/Container";
-import logo from "assets/images/logo.png";
+import Container from 'components/Container'
+import logo from 'assets/images/logo.png'
 
 const Header = () => {
   return (
@@ -37,7 +37,7 @@ const Header = () => {
         </div>
       </Container>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
