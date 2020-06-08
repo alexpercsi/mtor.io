@@ -424,7 +424,7 @@ const TermsPage = () => {
         <p className="small-thx">* These terms
           of use were created using <a href="#Termly’s Terms and Conditions Generator.">Termly’s Terms and Conditions Generator.</a>
         </p>
-        <div className="flex-center">
+        <div className="flex-center i-want-to-join">
             <a href="/" className="btn primary">
               I want to join! </a>
         </div>             

@@ -218,7 +218,7 @@
   width: 40%;
 }
 .column {
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -237,8 +237,17 @@
   align-items: center;
   height: 200px;
 }
+.icon-container {
+  height: 49px;
+  display: flex;
+  align-items: flex-end;
+}
 @media (min-width: 576px) {
   .section-numbers {
     flex-direction: row;
   }
+  .column {
+    width: 60%;
+  }
 }
+

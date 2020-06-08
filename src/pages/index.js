@@ -140,8 +140,8 @@ const IndexPage = () => {
       </Container>
 
       <div className="mtor-numbers diagonal-line">
-        <div className="seperator">
-          <svg
+      <svg
+            className="seperator"
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="none"
             version="1.1"
@@ -151,25 +151,30 @@ const IndexPage = () => {
           >
             <polygon class="fill-white" points="2560 0 0 0 0 100"></polygon>
           </svg>
-        </div>
         <Container>
           <div className="section-numbers">
             <h2 className="txt-white">Mtor in numbers</h2>
             <ul className="column">
               <li className="list-item">
-                <img src={mentees} alt="" width="60" />
+                <div className="icon-container">
+                  <img src={mentees} alt="" width="60" />
+                  </div>
                 <span className="numbers">33</span>
 
                 <h4 className="txt-center txt-white">Mentors/ Mentees</h4>
               </li>
 
               <li className="list-item">
+                <div className="icon-container">
                 <img src={intro} alt="" width="60" />
+                </div>
                 <span className="numbers">45</span>
                 <h4 className="txt-center txt-white">Total Members</h4>
               </li>
               <li className="list-item">
+                <div className="icon-container">
                 <img src={members} alt="" width="60" />
+                </div>
                 <span className="numbers">15</span>
                 <h4 className="txt-center txt-white">Intros made</h4>
               </li>
