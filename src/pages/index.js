@@ -1,15 +1,16 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import Layout from 'components/Layout'
-import Container from 'components/Container'
-import stepOne from 'assets/images/illustration1.png'
-import stepTwo from 'assets/images/illustration2.png'
-import stepThree from 'assets/images/illustration3.png'
-import community from 'assets/images/illustration-community-desktop.png'
-import organizing from 'assets/images/illustration-organizing-ideas.png'
-import mentees from 'assets/images/mentees.png'
-import intro from 'assets/images/icon-intro.png'
-import members from 'assets/images/icon-total-members.png'
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import Layout from 'components/Layout';
+import Container from 'components/Container';
+import stepOne from 'assets/images/illustration1.png';
+import stepTwo from 'assets/images/illustration2.png';
+import stepThree from 'assets/images/illustration3.png';
+import community from 'assets/images/illustration-community-desktop.png';
+import organizing from 'assets/images/illustration-organizing-ideas.png';
+import mentees from 'assets/images/mentees.png';
+import intro from 'assets/images/icon-intro.png';
+import members from 'assets/images/icon-total-members.png';
+import { Link } from 'gatsby';
 
 const IndexPage = () => {
   return (
@@ -29,9 +30,9 @@ const IndexPage = () => {
             </h3>
           </div>
           <div className="welcomeActions">
-            <a href="/" className="btn primary">
+            <Link to="/signup/" className="btn primary">
               I want to join!
-            </a>
+            </Link>
             <a href="/" className="btn">
               About us.
             </a>
@@ -42,7 +43,7 @@ const IndexPage = () => {
       <Container>
         <div className="mission">
           <h2 className="section-title">Mtor why and mission.</h2>
-          <p className="subtitle white">
+          <p className="subtitle white greenHighlightStart">
             Our mission is to make long lasting and meaningful connections with
             peers that can elevate your knowledge and career outside of your
             immediate circle.
@@ -55,7 +56,7 @@ const IndexPage = () => {
             connections based on your goals, allowing you to teach or be taught
             in areas that interest you.
           </p>
-          <p className="subtitle white">
+          <p className="subtitle white greenHighlightEnd">
             Increasing community and knowledge is what we stand for.
           </p>
         </div>
@@ -140,17 +141,17 @@ const IndexPage = () => {
       </Container>
 
       <div className="mtor-numbers diagonal-line">
-      <svg
-            className="seperator"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon class="fill-white" points="2560 0 0 0 0 100"></polygon>
-          </svg>
+        <svg
+          className="seperator"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon class="fill-white" points="2560 0 0 0 0 100"></polygon>
+        </svg>
         <Container>
           <div className="section-numbers">
             <h2 className="txt-white">Mtor in numbers</h2>
@@ -158,7 +159,7 @@ const IndexPage = () => {
               <li className="list-item">
                 <div className="icon-container">
                   <img src={mentees} alt="" width="60" />
-                  </div>
+                </div>
                 <span className="numbers">33</span>
 
                 <h4 className="txt-center txt-white">Mentors/ Mentees</h4>
@@ -166,14 +167,14 @@ const IndexPage = () => {
 
               <li className="list-item">
                 <div className="icon-container">
-                <img src={intro} alt="" width="60" />
+                  <img src={intro} alt="" width="60" />
                 </div>
                 <span className="numbers">45</span>
                 <h4 className="txt-center txt-white">Total Members</h4>
               </li>
               <li className="list-item">
                 <div className="icon-container">
-                <img src={members} alt="" width="60" />
+                  <img src={members} alt="" width="60" />
                 </div>
                 <span className="numbers">15</span>
                 <h4 className="txt-center txt-white">Intros made</h4>
@@ -183,7 +184,7 @@ const IndexPage = () => {
         </Container>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
