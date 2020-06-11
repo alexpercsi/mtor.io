@@ -11,10 +11,12 @@
   .title {
     width: 320px;
     font-weight: 800;
+    margin-bottom: 15px;
   }
 
   .subtitle {
-    width: 200px;
+    margin-top: 0px;
+    max-width: 200px;
     font-weight: 200;
   }
 
@@ -100,15 +102,17 @@
 
     .title {
       width: 540px;
+      font-size: 42px;
     }
 
     .subtitle {
-      width: 487px;
+      max-width: 440px;
     }
 
     .welcomeActions {
       flex-direction: row;
       margin-top: 57px;
+      padding: 0;
 
       .btn:not(:first-child) {
         margin-left: 20px;
