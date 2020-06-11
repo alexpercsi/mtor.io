@@ -16,7 +16,6 @@ header {
 .logo {
   img {
     height: 34px;
-    margin-top: 13px;
   }
 }
 
@@ -26,10 +25,6 @@ ul {
   padding: 0;
 }
 
-
-
-
-
 .headerWrapper {
   display: flex;
   justify-content: space-between;
@@ -37,21 +32,22 @@ ul {
   align-items: center;
 
   nav {
-        a {
-         color: white;
-         padding: 0 0.5em;
-       text-decoration: none;
-  font-weight: bold;
-}
+    margin-top: -5px;
 
-a:hover {
-  text-decoration: underline;
-}
+    a {
+      color: white;
+      padding: 0 0.5em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
     li:not(:first-child)::before {
       content: '\2022';
       color: $primary-brand;
       padding: 0 10px;
-  
     }
   }
 
