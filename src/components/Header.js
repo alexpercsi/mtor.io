@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Container from 'components/Container'
-import logo from 'assets/images/logo.png'
+import Container from 'components/Container';
+import logo from 'assets/images/logo.png';
 
 const Header = () => {
   return (
@@ -17,27 +17,27 @@ const Header = () => {
           <nav id="navbar" className="desktop">
             <ul>
               <li>
-                <Link to="#">join</Link>
+                <Link to="/signup">join</Link>
               </li>
               <li>
-                <Link to="#">how it works</Link>
+                <Link to="#how-it-works">how it works</Link>
               </li>
               <li>
-                <Link to="#">community</Link>
+                <Link to="#community">community</Link>
               </li>
             </ul>
           </nav>
           <nav id="navbar" className="mobile">
             <ul>
               <li>
-                <Link to="#">join</Link>
+                <Link to="/join">join</Link>
               </li>
             </ul>
           </nav>
         </div>
       </Container>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

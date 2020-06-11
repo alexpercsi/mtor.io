@@ -62,11 +62,13 @@ a {
   color: $secondary-text;
   text-decoration: none;
 }
+
 .txt-purple {
   color: $secondary-text;
 }
 
 .btn {
+  display: inline-block;
   border-radius: 6px;
   padding: 21px 29px;
   font-weight: bold;
@@ -108,7 +110,7 @@ img {
 }
 
 .greenHighlightStart {
-   position: relative;
+  position: relative;
   &:before {
     content: '';
     width: 34px;
@@ -122,7 +124,7 @@ img {
 }
 
 .greenHighlightEnd {
-   position: relative;
+  position: relative;
   &:before {
     content: '';
     width: 100%;
@@ -135,14 +137,13 @@ img {
   }
 }
 
-h2.pages-title{
-  margin-top:50px;
- 
-};
-
-h4.pages-subtitle{
-  margin-top:0;
+h2.pages-title {
+  margin-top: 50px;
 }
- h2.no-bottom-margin{
-   margin-bottom:0;
- }
+
+h4.pages-subtitle {
+  margin-top: 0;
+}
+h2.no-bottom-margin {
+  margin-bottom: 0;
+}
