@@ -8,7 +8,7 @@ footer {
     margin: 0;
     padding: 0;
   }
-  .social-links ul li{
+  .social-links ul li {
     margin-left: 20px;
   }
 
@@ -29,14 +29,15 @@ footer {
 
   p {
     font-size: 0.75rem;
-    font-weight: 300;      
+    font-weight: 300;
     margin-right: 0.2em;
   }
 }
 .social-links {
+  align-items: center;
   flex-shrink: 0;
-    margin-top: 10px;
-    margin-right: 64px
+  margin-top: 10px;
+  margin-right: 64px;
 }
 
 .footer-logo {
