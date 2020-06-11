@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 
 import Layout from 'components/Layout'
 import Container from 'components/Container'
+import { Link } from 'gatsby';
 
 const PrivacyPage = () => {
   return (
@@ -11,10 +12,15 @@ const PrivacyPage = () => {
         <title>Privacy Policy</title>
       </Helmet>
       <Container>
-        <h1 className="txt-center">Privacy Policy</h1>
-        <h4 className="txt-center">Last updated May 24, 2020</h4>
+        <h2 className="txt-center pages-title no-bottom-margin">
+          Privacy Policy
+        </h2>
+        <h4 className="txt-center pages-subtitle ">
+          Last updated May 24, 2020
+        </h4>
         <p>
-          Thank you for choosing to be part of our community at Mtor.io
+          <span className="greenHighlightStart">Thank </span>
+          you for choosing to be part of our community at Mtor.io
           <strong>(“Company”, “we”, “us”, or “our”)</strong>. We are committed
           to protecting your personal information and your right to privacy. If
           you have any questions or concerns about our policy, or our practices
@@ -334,7 +340,8 @@ const PrivacyPage = () => {
         </h3>
         <p>
           <strong>In Short:</strong>{' '}
-          <i>Yes, if you are a resident of California, you are granted specific
+          <i>
+            Yes, if you are a resident of California, you are granted specific
             rights regarding access to your personal information.
           </i>
         </p>
@@ -361,7 +368,9 @@ const PrivacyPage = () => {
 
         <h3 id="do-we-make">10. DO WE MAKE UPDATES TO THIS POLICY?</h3>
         <p>
-          <strong>In Short: </strong> <i>Yes, we will update this policy as necessary to stay compliant with
+          <strong>In Short: </strong>{' '}
+          <i>
+            Yes, we will update this policy as necessary to stay compliant with
             relevant laws.
           </i>
         </p>
@@ -409,13 +418,16 @@ const PrivacyPage = () => {
           <a href="https://termly.io/">Termly’s Privacy Policy Generator.</a>
         </p>
         <div className="flex-center i-want-to-join">
-          <a href="/" className="btn primary">
+          <Link to="/signup/" className="btn primary">
             I want to join!
-          </a>
+          </Link>
+          {/* <a href="/" className="btn primary">
+            I want to join!
+          </a> */}
         </div>
       </Container>
     </Layout>
-  )
+  );
 }
 
 export default PrivacyPage

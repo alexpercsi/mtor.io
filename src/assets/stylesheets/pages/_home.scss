@@ -41,34 +41,11 @@
     font-size: 22px;
     line-height: 1.8rem;
     font-weight: 300;
-    position: relative;
+   
   }
 }
 
-.greenHighlightStart {
-  &:before {
-    content: '';
-    width: 34px;
-    height: 13px;
-    position: absolute;
-    top: 1px;
-    background: #7beec4;
-    z-index: -1;
-  }
-}
 
-.greenHighlightEnd {
-  &:before {
-    content: '';
-    width: 34px;
-    height: 13px;
-    position: absolute;
-    top: 1px;
-    right: 0px;
-    background: #7beec4;
-    z-index: -1;
-  }
-}
 
 .howItWorksWrapper {
   padding: 52px 0 78px;

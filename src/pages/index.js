@@ -43,8 +43,9 @@ const IndexPage = () => {
       <Container>
         <div className="mission">
           <h2 className="section-title">Mtor why and mission.</h2>
-          <p className="subtitle white greenHighlightStart">
-            Our mission is to make long lasting and meaningful connections with
+          <p className="subtitle white">
+            <span className="greenHighlightStart">Our </span>
+            mission is to make long lasting and meaningful connections with
             peers that can elevate your knowledge and career outside of your
             immediate circle.
           </p>
@@ -56,8 +57,8 @@ const IndexPage = () => {
             connections based on your goals, allowing you to teach or be taught
             in areas that interest you.
           </p>
-          <p className="subtitle white greenHighlightEnd">
-            Increasing community and knowledge is what we stand for.
+          <p className="subtitle white ">
+            Increasing community and knowledge is what we stand <span className="greenHighlightEnd">for </span>
           </p>
         </div>
       </Container>
@@ -84,9 +85,9 @@ const IndexPage = () => {
               </li>
             </ul>
             <div className="joinButton">
-              <a href="/" className="btn primary">
+              <Link to="/signup/" className="btn primary">
                 I want to join!
-              </a>
+              </Link>
             </div>
           </div>
         </Container>
@@ -99,12 +100,12 @@ const IndexPage = () => {
               <img src={community} alt="" width="332" />
             </div>
             <div className="comunity-txt">
-              <p>
+              <h3>
                 Once you have shared what you are looking for, you will be
                 invited to join our exclusive slack channel. From here you will
                 be able to network among the community, share your ideas and
                 engage in likeminded conversations throughout the channels.
-              </p>
+              </h3>
               <p>
                 Behind the scenes, the team will look for suitable connections
                 for you based on the information you provide us. We will then
