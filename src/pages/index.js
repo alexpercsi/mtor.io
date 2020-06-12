@@ -23,10 +23,10 @@ const IndexPage = () => {
           <div className="welcomeText">
             <h4 className="tagline">Mentorship Platform</h4>
             <h1 className="title dark">
-              Get conected to your peers to learn or teach.
+              Get conected to your peers to learn or teach
             </h1>
             <h3 className="subtitle dark">
-              Join a network that curate professional conections.
+              Join a network that curate professional conections
             </h3>
           </div>
           <div className="welcomeActions">
@@ -58,12 +58,13 @@ const IndexPage = () => {
             in areas that interest you.
           </p>
           <p className="subtitle white ">
-            Increasing community and knowledge is what we stand <span className="greenHighlightEnd">for. </span>
+            Increasing community and knowledge is what we stand{' '}
+            <span className="greenHighlightEnd">for. </span>
           </p>
         </div>
       </Container>
 
-      <div className="howItWorksWrapper">
+      <div className="howItWorksWrapper" id="how-it-works">
         <Container>
           <div>
             <h2>How mtor works</h2>
@@ -92,32 +93,35 @@ const IndexPage = () => {
           </div>
         </Container>
       </div>
-      <Container>
-        <div className="community">
-          <h2 className="section-title">Community Engagement</h2>
-          <div className="community-content">
-            <div className="flex-center img-container">
-              <img src={community} alt="" width="332" />
-            </div>
-            <div className="comunity-txt">
-              <h3>
-                Once you have shared what you are looking for, you will be
-                invited to join our exclusive slack channel. From here you will
-                be able to network among the community, share your ideas and
-                engage in likeminded conversations throughout the channels.
-              </h3>
-              <p>
-                Behind the scenes, the team will look for suitable connections
-                for you based on the information you provide us. We will then
-                invite you and your partner to chat, how it evolves following
-                this is down to you. Online or offline you can choose to keep it
-                on the conversation on the channel or not, work around your
-                schedule and speak when you both have time.
-              </p>
+      <div className="communityWrapper" id="community">
+        <Container>
+          <div className="community">
+            <h2 className="section-title">Community Engagement</h2>
+            <div className="community-content">
+              <div className="flex-center img-container">
+                <img src={community} alt="" width="332" />
+              </div>
+              <div className="comunity-txt">
+                <h3>
+                  Once you have shared what you are looking for, you will be
+                  invited to join our exclusive slack channel. From here you
+                  will be able to network among the community, share your ideas
+                  and engage in likeminded conversations throughout the
+                  channels.
+                </h3>
+                <p>
+                  Behind the scenes, the team will look for suitable connections
+                  for you based on the information you provide us. We will then
+                  invite you and your partner to chat, how it evolves following
+                  this is down to you. Online or offline you can choose to keep
+                  it on the conversation on the channel or not, work around your
+                  schedule and speak when you both have time.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
 
       <div className="industries">
         <Container>

@@ -1,8 +1,8 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
-import Layout from "components/Layout";
-import Container from "components/Container";
+import Layout from 'components/Layout';
+import Container from 'components/Container';
 import { Link } from 'gatsby';
 
 const TermsPage = () => {
@@ -15,7 +15,9 @@ const TermsPage = () => {
         <h2 className="txt-center pages-title no-bottom-margin">
           Terms and Condition
         </h2>
-        <h4 className="txt-center page-subtitle ">Last updated May 24, 2020</h4>
+        <h4 className="txt-center pages-subtitle ">
+          Last updated May 24, 2020
+        </h4>
         <h3 className="txt-purple">1. Agreement to Terms </h3>
         <p>
           1.1 These Terms and Conditions constitute a legally binding agreement
