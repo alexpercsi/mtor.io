@@ -21,28 +21,31 @@ const PrivacyPage = () => {
         <p>
           <span className="greenHighlightStart">Thank </span>
           you for choosing to be part of our community at Mtor.io
-          <strong>(“Company”, “we”, “us”, or “our”)</strong>. We are committed
+          <strong> (“Company”, “we”, “us”, or “our”)</strong>. We are committed
           to protecting your personal information and your right to privacy. If
           you have any questions or concerns about our policy, or our practices
           with regards to your personal information, please contact us at
-          <a href="mailto:support@mtor.io">support@mtor.io</a>. When you visit
-          our website <a href="https://mtor.io">https://mtor.io</a>, and use our
-          services, you trust us with your personal information. We take your
-          privacy very seriously. In this privacy policy, we seek to explain to
-          you in the clearest way possible what information we collect, how we
-          use it and what rights you have in relation to it. We hope you take
-          some time to read through it carefully, as it is important. If there
-          are any terms in this privacy policy that you do not agree with,
-          please discontinue use of our Sites and our services. This privacy
-          policy applies to all information collected through our website (such
-          as <a href="https://mtor.io">https://mtor.io</a>), and/or any related
+          <a href="mailto:support@mtor.io"> support@mtor.io</a>. <br></br>When
+          you visit our website <a href="https://mtor.io">https://mtor.io</a>{' '}
+          and use our services, you trust us with your personal information. We
+          take your privacy very seriously. In this privacy policy, we seek to
+          explain to you in the clearest way possible what information we
+          collect, how we use it and what rights you have in relation to it. We
+          hope you take some time to read through it carefully, as it is
+          important. If there are any terms in this privacy policy that you do
+          not agree with, please discontinue use of our Sites and our services.
+          <br></br>This privacy policy applies to all information collected
+          through our website (such as{' '}
+          <a href="https://mtor.io">https://mtor.io</a>), and/or any related
           services, sales, marketing or events (we refer to them collectively in
-          this privacy policy as the "Services"). Please read this privacy
-          policy carefully as it will help you make informed decisions about
-          sharing your personal information with us.
+          this privacy policy as the <strong>"Services"</strong>).<br></br>
+          <strong>
+            Please read this privacy policy carefully as it will help you make
+            informed decisions about sharing your personal information with us.
+          </strong>
         </p>
 
-        <h4 className="txt-purple">TABLE OF CONTENTS</h4>
+        <h3 className="txt-purple">TABLE OF CONTENTS</h3>
         <ol className="table-content">
           <li>
             <a href="#what-information-do-we-collect">
@@ -93,8 +96,8 @@ const PrivacyPage = () => {
           1. WHAT INFORMATION DO WE COLLECT?
         </h3>
         <p>
-          Personal information you disclose to us
-          <strong>In Short:</strong>  We collect personal information that you
+          Personal information you disclose to us.<br></br>
+          <strong> In Short:</strong>  We collect personal information that you
           provide to us. We collect personal information that you voluntarily
           provide to us when expressing an interest in obtaining information
           about us or our products and services, when participating in
@@ -109,7 +112,7 @@ const PrivacyPage = () => {
           the products and features you use. The personal information we collect
           can include the following: Publicly Available Personal Information. We
           collect first name, maiden name, last name, and nickname; email
-          addresses; phone numbers; Job title; and other similar data.  All
+          addresses; phone numbers; Job title; and other similar data. All
           personal information that you provide to us must be true, complete and
           accurate, and you must notify us of any changes to such personal
           information.
@@ -136,35 +139,60 @@ const PrivacyPage = () => {
            We and/or our third party marketing partners may use the personal
           information you send to us for our marketing purposes, if this is in
           accordance with your marketing preferences. You can opt-out of our
-          marketing emails at any time (see the "WHAT ARE YOUR PRIVACY RIGHTS"
-          below). To send administrative information to you. We may use your
-          personal information to send you product, service and new feature
+          marketing emails at any time (see the
+          <a href>"WHAT ARE YOUR PRIVACY RIGHTS" </a>
+          below)
+        </p>
+        <p>
+          <strong>To send administrative information to you.</strong> We may use
+          your personal information to send you product, service and new feature
           information and/or information about changes to our terms, conditions,
-          and policies. Request Feedback. We may use your information to request
-          feedback and to contact you about your use of our Services. To protect
-          our Services. We may use your information as part of our efforts to
-          keep our Services safe and secure (for example, for fraud monitoring
-          and prevention). To enable user-to-user communications. We may use
+          and policies.
+        </p>
+        <p>
+          <strong>Request Feedback.</strong> We may use your information to
+          request feedback and to contact you about your use of our Services.{' '}
+        </p>
+        <p>
+           <strong>To protect our Services.</strong>We may use your information
+          as part of our efforts to keep our Services safe and secure (for
+          example, for fraud monitoring and prevention).
+        </p>
+        <p>
+          <strong>To enable user-to-user communications.</strong> We may use
           your information in order to enable user-to-user communications with
-          each user's consent. To enforce our terms, conditions and policies for
-          Business Purposes, Legal Reasons and Contractual. To respond to legal
-          requests and prevent harm. If we receive a subpoena or other legal
-          request, we may need to inspect the data we hold to determine how to
-          respond. To respond to user inquiries/offer support to users. We may
-          use your information to respond to your inquiries and solve any
-          potential issues you might have with the use of our Services. For
-          other Business Purposes. We may use your information for other
-          Business Purposes, such as data analysis, identifying usage trends,
-          determining the effectiveness of our promotional campaigns and to
-          evaluate and improve our Services, products, marketing and your
-          experience. We may use and store this information in aggregated and
-          anonymized form so that it is not associated with individual end users
-          and does not include personal information. We will not use
-          identifiable personal information without your consent.{' '}
+          each user's consent.
+        </p>
+        <p>
+          <strong>
+            To enforce our terms, conditions and policies for Business Purposes,
+            Legal Reasons and Contractual.
+          </strong>
+        </p>
+        <p>
+          <strong>To respond to legal requests and prevent harm.</strong>
+           If we receive a subpoena or other legal request, we may need to
+          inspect the data we hold to determine how to respond.
+        </p>
+        <p>
+          <strong>To respond to user inquiries/offer support to users. </strong>
+          We may use your information to respond to your inquiries and solve any
+          potential issues you might have with the use of our Services.
+        </p>
+        <p>
+          <strong>For other Business Purposes.</strong> We may use your
+          information for other Business Purposes, such as data analysis,
+          identifying usage trends, determining the effectiveness of our
+          promotional campaigns and to evaluate and improve our Services,
+          products, marketing and your experience. We may use and store this
+          information in aggregated and anonymized form so that it is not
+          associated with individual end users and does not include personal
+          information. We will not use identifiable personal information without
+          your consent.
         </p>
 
         <h3 id="will-your-information-will-be-shared-with-anyone">
-          WILL YOUR INFORMATION BE SHARED WITH ANYONE?
+          3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?
         </h3>
         <p>
           <strong>In Short:</strong> We only share information with your
@@ -248,12 +276,13 @@ const PrivacyPage = () => {
           set out in this privacy policy, unless a longer retention period is
           required or permitted by law (such as tax, accounting or other legal
           requirements). No purpose in this policy will require us keeping your
-          personal information for longer than 2 years. When we have no ongoing
-          legitimate business need to process your personal information, we will
-          either delete or anonymize it, or, if this is not possible (for
-          example, because your personal information has been stored in backup
-          archives), then we will securely store your personal information and
-          isolate it from any further processing until deletion is possible.
+          personal information for longer than 2 years.<br></br>
+          When we have no ongoing legitimate business need to process your
+          personal information, we will either delete or anonymize it, or, if
+          this is not possible (for example, because your personal information
+          has been stored in backup archives), then we will securely store your
+          personal information and isolate it from any further processing until
+          deletion is possible.
         </p>
 
         <h3 id="do-we-collect">5. DO WE COLLECT INFORMATION FROM MINORS?</h3>
@@ -268,7 +297,7 @@ const PrivacyPage = () => {
           from users less than 18 years of age has been collected, we will
           deactivate the account and take reasonable measures to promptly delete
           such data from our records. If you become aware of any data we have
-          collected from children under age 18, please contact us at{' '}
+          collected from children under age 18, please contact us at
           <a href="mailto:support@mtor.io">support@mtor.io</a>.
         </p>
 
@@ -277,27 +306,28 @@ const PrivacyPage = () => {
           <strong>In Short: </strong> In some regions, such as the European
           Economic Area, you have rights that allow you greater access to and
           control over your personal information. You may review, change, or
-          terminate your account at any time. In some regions (like the European
-          Economic Area), you have certain rights under applicable data
+          terminate your account at any time. <br></br>In some regions (like the
+          European Economic Area), you have certain rights under applicable data
           protection laws. These may include the right (i) to request access and
           obtain a copy of your personal information, (ii) to request
           rectification or erasure; (iii) to restrict the processing of your
           personal information; and (iv) if applicable, to data portability. In
           certain circumstances, you may also have the right to object to the
           processing of your personal information. To make such a request,
-          please use the contact details provided below. We will consider and
-          act upon any request in accordance with applicable data protection
-          laws. If we are relying on your consent to process your personal
-          information, you have the right to withdraw your consent at any time.
-          Please note however that this will not affect the lawfulness of the
-          processing before its withdrawal.
+          please use the <a href="mailto:support@mtor.io">contact details</a>
+           provided below. We will consider and act upon any request in
+          accordance with applicable data protection laws. If we are relying on
+          your consent to process your personal information, you have the right
+          to withdraw your consent at any time. Please note however that this
+          will not affect the lawfulness of the processing before its
+          withdrawal.
         </p>
 
         <p>
           If you are resident in the European Economic Area and you believe we
           are unlawfully processing your personal information, you also have the
           right to complain to your local data protection supervisory authority.
-          You can find their contact details here:
+          You can find their contact details here:<br></br>
           <a href="http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm">
             http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm
           </a>
@@ -317,12 +347,11 @@ const PrivacyPage = () => {
           promptly investigate the matter and notify the applicable Supervisory
           Authority not later than 72 hours after having become aware of it,
           unless the personal data breach is unlikely to result in a risk to the
-          rights and freedoms of natural persons.{' '}
+          rights and freedoms of natural persons.
         </p>
 
         <h3 id="controls">8. CONTROLS FOR DO-NOT-TRACK FEATURES</h3>
         <p>
-          {' '}
           Most web browsers and some mobile operating systems and mobile
           applications include a Do-Not-Track (“DNT”) feature or setting you can
           activate to signal your privacy preference not to have data about your
@@ -339,7 +368,7 @@ const PrivacyPage = () => {
           9. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
         </h3>
         <p>
-          <strong>In Short:</strong>{' '}
+          <strong>In Short:</strong>
           <i>
             Yes, if you are a resident of California, you are granted specific
             rights regarding access to your personal information.
@@ -363,12 +392,12 @@ const PrivacyPage = () => {
           account and a statement that you reside in California. We will make
           sure the data is not publicly displayed on the Services, but please be
           aware that the data may not be completely or comprehensively removed
-          from our systems.{' '}
+          from our systems.
         </p>
 
         <h3 id="do-we-make">10. DO WE MAKE UPDATES TO THIS POLICY?</h3>
         <p>
-          <strong>In Short: </strong>{' '}
+          <strong>In Short: </strong>
           <i>
             Yes, we will update this policy as necessary to stay compliant with
             relevant laws.
@@ -389,7 +418,7 @@ const PrivacyPage = () => {
 
         <p>
           If you have questions or comments about this policy, you may email us
-          at <a href="mailto:support@mtor.io">support@mtor.io</a> or by post to
+          at <a href="mailto:support@mtor.io">support@mtor.io</a> or by post to:
           <br />
           Mtor.io
           <br />
@@ -413,9 +442,9 @@ const PrivacyPage = () => {
           within 30 days.
         </p>
 
-        <p>
-          * This privacy policy was created using{' '}
-          <a href="https://termly.io/">Termly’s Privacy Policy Generator.</a>
+        <p className="small-txt">
+          * This privacy policy was created using
+          <a href="https://termly.io/"> Termly’s Privacy Policy Generator.</a>
         </p>
         <div className="flex-center i-want-to-join">
           <Link to="/signup/" className="btn primary">

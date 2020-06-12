@@ -19,18 +19,18 @@ const TermsPage = () => {
         <h3 className="txt-purple">1. Agreement to Terms </h3>
         <p>
           1.1 These Terms and Conditions constitute a legally binding agreement
-          made between you, whether personally or on behalf of an entity (you),
-          and mtor.io located at 
+          made between you, whether personally or on behalf of an entity
+          <strong> (you)</strong>, and mtor.io located at 
           <strong>
             Lloyd-G.-Wells-Str. 20, Berlin 14163, Germany (we, us)
           </strong>
-          , concerning your access to and use of the (
+          , concerning your access to and use of the (
           <a href="https://mtor.io">https://mtor.io</a>) website as well as any
-          related applications (the <bold>Site</bold>).
+          related applications (the <strong>Site</strong>).
         </p>
         <p>
-          The Site provides the following services:{' '}
-          <bold>Community connecting (Services).</bold> You agree that by
+          The Site provides the following services:
+          <strong> Community connecting (Services).</strong> You agree that by
           accessing the Site and/or Services, you have read, understood, and
           agree to be bound by all of these Terms and Conditions. 
         </p>
@@ -44,15 +44,15 @@ const TermsPage = () => {
           future reference.
         </p>
         <p>
-            1.2 The supplemental policies set out in Section 1.7 below, as well
+           1.2 The supplemental policies set out in Section 1.7 below, as well
           as any supplemental terms and condition or documents that may be
           posted on the Site from time to time, are expressly incorporated by
           reference.
         </p>
         <p>
-          1.3  We may make changes to these Terms and Conditions at any time.
-          The updated version of these Terms and Conditions will be indicated by
-          an updated “Revised” date and the updated version will be effective as
+          1.3 We may make changes to these Terms and Conditions at any time. The
+          updated version of these Terms and Conditions will be indicated by an
+          updated “Revised” date and the updated version will be effective as
           soon as it is accessible. You are responsible for reviewing these
           Terms and Conditions to stay informed of updates. Your continued use
           of the Site represents that you have accepted such changes.
@@ -62,9 +62,8 @@ const TermsPage = () => {
           changes to our products, our users' needs and/or our business
           priorities.
         </p>
-           
         <p>
-          1.5  The information provided on the Site is not intended for
+          1.5 The information provided on the Site is not intended for
           distribution to or use by any person or entity in any jurisdiction or
           country where such distribution or use would be contrary to law or
           regulation or which would subject us to any registration requirement
@@ -77,16 +76,19 @@ const TermsPage = () => {
         </p>
          
         <p>
-          {' '}
           1.7 Additional policies which also apply to your use of the Site
-          include:    <span className="txt-purple">●</span> Our Privacy Notice,
+          include:{' '}
+        </p>
+        <p>
+          <span className="txt-purple dot-purple">●</span> Our Privacy Notice,
           which sets out the terms on which we process any personal data we
           collect from you, or that you provide to us. By using the Site, you
           consent to such processing and you warrant that all data provided by
           you is accurate.     
         </p>
-        <h2 className="txt-purple">2. Acceptable Use</h2> 
+        <h3 className="txt-purple">2. Acceptable Use</h3> 
         <p>
+          {' '}
           2.1 Our full Acceptable Use Policy, sets out all the permitted uses
           and prohibited uses of this site.
         </p>
@@ -96,13 +98,14 @@ const TermsPage = () => {
           not be used in connection with any commercial endeavors except those
           that are specifically endorsed or approved by us.
         </p>
+        <p>2.3 As a user of this Site, you agree not to:</p>
         <p>
-          2.3 As a user of this Site, you agree not to:
-          <span className="txt-purple">●</span> Falsely imply a relationship
-          with us or another company with whom you do not have a relationship.
+          <span className="txt-purple dot-purple">●</span> Falsely imply a
+          relationship with us or another company with whom you do not have a
+          relationship.
         </p>
           
-        <h2 className="txt-purple">3. Information you provide to us </h2>
+        <h3 className="txt-purple">3. Information you provide to us </h3>
         <p>
           3.1 You represent and warrant that: (a) all registration information
           you submit will be true, accurate, current, and complete and relate to
@@ -126,12 +129,13 @@ const TermsPage = () => {
           may remove or change a user name you select if we determine that such
           user name is inappropriate.
         </p>
-        <h2 className="txt-purple">4. Content you provide to us</h2>  
+        <h3 className="txt-purple">4. Content you provide to us</h3>  
         <p>
           4.1 There may be opportunities for you to post content to the Site or
-          send feedback to us (User Content). You understand and agree that your
-          User Content may be viewed by other users on the Site, and that they
-          may be able to see who has posted that User Content.
+          send feedback to us (<strong>User Content</strong>). You understand
+          and agree that your User Content may be viewed by other users on the
+          Site, and that they may be able to see who has posted that User
+          Content.
         </p>
         <p>
           4.2 You further agree that we can use your User Content for any other
@@ -169,16 +173,16 @@ const TermsPage = () => {
         </p>
         <p>
           4.7 If you wish to complain about User Content uploaded by other users
-          please contact us at support@mtor.io.
+          please contact us at{' '}
+          <a href="mailto:support@mtor.io">support@mtor.io</a>.
         </p>
-        <h2 className="txt-purple">5. Our content</h2>
+        <h3 className="txt-purple">5. Our content</h3>
         <p>
-          {' '}
           5.1 Unless otherwise indicated, the Site and Services including source
           code, databases, functionality, software, website designs, audio,
-          video, text, photographs, and graphics on the Site (Our Content) are
-          owned or licensed to us, and are protected by copyright and trade mark
-          laws.
+          video, text, photographs, and graphics on the Site (
+          <strong>Our Content</strong>)are owned or licensed to us, and are
+          protected by copyright and trade mark laws.
         </p>
         <p>
           5.2 Except as expressly provided in these Terms and Conditions, no
@@ -223,7 +227,7 @@ const TermsPage = () => {
           complete or up to date.
         </p>
           
-        <h2 className="txt-purple">6. Link to third party content </h2>
+        <h3 className="txt-purple">6. Link to third party content </h3>
         <p>
           6.1 The Site may contain links to websites or applications operated by
           third parties.We do not have any influence or control over any such
@@ -235,7 +239,7 @@ const TermsPage = () => {
           the Site, you do so at your own risk. The advertiser, and not us, is
           responsible for such goods and/or services and if you have any
           questions or complaints in relation to them, you should contact the
-          advertiser.{' '}
+          advertiser.
         </p>
         <p>
           6.2 We accept no responsibility for adverts contained within the Site.
@@ -245,7 +249,7 @@ const TermsPage = () => {
           and if you have any questions or complaints in relation to them, you
           should contact the advertiser.
         </p>
-        <h2 className="txt-purple">Site Management</h2>
+        <h3 className="txt-purple">Site Management</h3>
         <p>
           7.1  We reserve the right at our sole discretion, to (1) monitor the
           Site for breaches of these Terms and Conditions; (2) take appropriate
@@ -264,15 +268,14 @@ const TermsPage = () => {
         </p>
           
         <p>
-          {' '}
           7.3  You are responsible for configuring your information technology,
           computer programs and platform to access the Site and you should use
           your own virus protection software.
-        </p>{' '}
+        </p>
          
-        <h2 className="txt-purple">
+        <h3 className="txt-purple">
           8.    Modifications to and availability of the Site
-        </h2>{' '}
+        </h3>
             
         <p>
           8.1  We reserve the right to change, modify, or remove the contents of
@@ -281,7 +284,6 @@ const TermsPage = () => {
           of the Services without notice at any time.
         </p>
         <p>
-          {' '}
           8.2  We cannot guarantee the Site and Services will be available at
           all times. We may experience hardware, software, or other problems or
           need to perform maintenance related to the Site, resulting in
@@ -293,16 +295,15 @@ const TermsPage = () => {
           updates, or releases.
         </p>
         <p>
-          {' '}
           8.3  There may be information on the Site that contains typographical
           errors, inaccuracies, or omissions that may relate to the Services,
           including descriptions, pricing, availability, and various other
           information. We reserve the right to correct any errors, inaccuracies,
           or omissions and to change or update the information at any time,
-          without prior notice.{' '}
+          without prior notice.
         </p>
           
-        <h2 className="txt-purple">9. Disclaimer/Limitation of Liability</h2>
+        <h3 className="txt-purple">9. Disclaimer/Limitation of Liability</h3>
         <p>
           9.1  The Site and Services are provided on an as-is and as-available
           basis. You agree that your use of the Site and/or Services will be at
@@ -325,14 +326,18 @@ const TermsPage = () => {
           Terms and Conditions if such delay or failure is caused by an event
           beyond our reasonable control. 
         </p>
+        <p>9.2  Our responsibility for loss or damage suffered by you: </p>
+        <p className="page-subtitle">
+          Whether you are a consumer or a business user:
+        </p>
         <p>
-          9.2  Our responsibility for loss or damage suffered by you:  Whether
-          you are a consumer or a business user: {' '}
           <span className="txt-purple">●</span> We do not exclude or limit in
           any way our liability to you where it would be unlawful to do so. This
           includes liability for death or personal injury caused by our
           negligence or the negligence of our employees, agents or
           subcontractors and for fraud or fraudulent misrepresentation.
+        </p>
+        <p>
           <span className="txt-purple">●</span> If we fail to comply with these
           Terms and Conditions, we will be responsible for loss or damage you
           suffer that is a foreseeable result of our breach of these Terms and
@@ -340,9 +345,8 @@ const TermsPage = () => {
           that were not foreseeable at the time you started using the
           Site/Services.
         </p>
-            <h2 className="txt-purple">10. Term and Termination </h2>
+            <h3 className="txt-purple">10. Term and Termination </h3>
         <p>
-          {' '}
           10.1  These Terms and Conditions shall remain in full force and effect
           while you use the Site or Services or are otherwise a user of the
           Site, as applicable. You may terminate your use or participation at
@@ -352,7 +356,6 @@ const TermsPage = () => {
           <a href="mailto: support@mtor.io"> support@mtor.io.</a>
         </p>
         <p>
-          {' '}
           10.2  Without limiting any other provision of these Terms and
           Conditions, we reserve the right to, in our sole discretion and
           without notice or liability, deny access to and use of the Site and
@@ -375,7 +378,7 @@ const TermsPage = () => {
           reserve the right to take appropriate legal action, including without
           limitation pursuing civil, criminal, and injunctive redress.
         </p>
-        <h2 className="txt-purple"> 11.     Mobile Application</h2>
+        <h3 className="txt-purple"> 11.   Mobile Application</h3>
         <p>
             11.1  If you access the Services via a mobile application, then we
           grant you a revocable, non-exclusive, non-transferable, limited right
@@ -385,7 +388,6 @@ const TermsPage = () => {
           conditions of this license.  
         </p>
         <p>
-          {' '}
           11.2  The following terms apply when you use a mobile application
           obtained from either the Apple Store or Google Play (each an App
           Distributor) to access the Services: 
@@ -407,7 +409,6 @@ const TermsPage = () => {
         </p>
          
         <p>
-          {' '}
           (c) In the event of any failure of the mobile application to conform
           to any applicable warranty, you may notify an App Distributor, and the
           App Distributor, in accordance with its terms and policies, may refund
@@ -417,7 +418,6 @@ const TermsPage = () => {
           mobile application; 
         </p>
         <p>
-          {' '}
           (d) You represent and warrant that (i) you are not located in a
           country that is subject to a U.S. government embargo, or that has been
           designated by the U.S. government as a “terrorist supporting” country;
@@ -431,27 +431,28 @@ const TermsPage = () => {
           service agreement when using the mobile application; and 
         </p>
         <p>
-          {' '}
           (f) You acknowledge and agree that the App Distributors are third
           party beneficiaries of these Terms and Conditions, and that each App
           Distributor will have the right (and will be deemed to have accepted
           the right) to enforce these Terms and Conditions against you as a
           third party beneficiary thereof. 
         </p>
-        <h2 className="txt-purple">12. General </h2> 
+        <h3 className="txt-purple">12. General </h3> 
         <p>
-           12.1  Visiting the Site, sending us emails, and completing online
+          12.1  Visiting the Site, sending us emails, and completing online
           forms constitute electronic communications. You consent to receive
           electronic communications and you agree that all agreements, notices,
           disclosures, and other communications we provide to you
           electronically, via email and on the Site, satisfy any legal
           requirement that such communication be in writing.
+        </p>
+        <p>
           <strong>
             You hereby agree to the use of electronic signatures, contracts,
             orders and other records and to electronic delivery of notices,
             policies and records of transactions initiated or completed by us or
-            via the Site.
-          </strong>{' '}
+            via the Site.{' '}
+          </strong>
           You hereby waive any rights or requirements under any statutes,
           regulations, rules, ordinances or other laws in any jurisdiction which
           require an original signature or delivery or retention of
@@ -464,7 +465,6 @@ const TermsPage = () => {
           entire agreement and understanding between you and us.
         </p>
         <p>
-          {' '}
           12.3  Our failure to exercise or enforce any right or provision of
           these Terms and Conditions shall not operate as a waiver of such right
           or provision.
@@ -492,11 +492,11 @@ const TermsPage = () => {
         </p>
          
         <p>
-          12.8  The following are trade marks of <a href="mtor.io">mtor.io</a>{' '}
+          12.8  The following are trade marks of <a href="mtor.io">mtor.io </a>.
           You are not permitted to use them without our approval, unless they
           are part of material our Site explicitly states you are permitted to
           use. 
-        </p>{' '}
+        </p>
            
         <p>
           12.9  A person who is not a party to these Terms and Conditions shall
@@ -509,8 +509,8 @@ const TermsPage = () => {
           contact us by email at{' '}
           <a href="mailto:support@mtor.io.">support@mtor.io</a>
         </p>
-        <p className="small-thx">
-          * These terms of use were created using{' '}
+        <p className="small-txt">
+          * These terms of use were created using
           <a href="#Termly’s Terms and Conditions Generator.">
             Termly’s Terms and Conditions Generator.
           </a>

@@ -60,7 +60,9 @@ h4 {
 
 a {
   color: $secondary-text;
-  text-decoration: none;
+  font-weight:bold;
+  // text-decoration: none;
+  line-height: 200%;
 }
 .txt-purple {
   color: $secondary-text;
@@ -72,6 +74,7 @@ a {
   font-weight: bold;
   background-color: $secondary-brand;
   color: #ffffff;
+  text-decoration: none;
 
   &.primary {
     background-color: $primary-brand;
@@ -128,7 +131,7 @@ img {
     width: 100%;
     height: 13px;
     top: 15px;
-    right: 4px;
+    right: -7px;
     position: absolute;
     background: #7beec4;
     z-index: -1;
@@ -146,3 +149,16 @@ h4.pages-subtitle{
  h2.no-bottom-margin{
    margin-bottom:0;
  }
+.small-txt{
+ color:$tertiary-text;
+ font-weight: 200;
+ font-size: 10px;
+}
+p{
+  line-height: 160%;
+}
+
+// .dot-purple{
+//   width:20px;
+//   height:20px;
+// }

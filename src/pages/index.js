@@ -58,7 +58,7 @@ const IndexPage = () => {
             in areas that interest you.
           </p>
           <p className="subtitle white ">
-            Increasing community and knowledge is what we stand <span className="greenHighlightEnd">for </span>
+            Increasing community and knowledge is what we stand <span className="greenHighlightEnd">for. </span>
           </p>
         </div>
       </Container>
