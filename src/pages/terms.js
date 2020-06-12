@@ -88,9 +88,8 @@ const TermsPage = () => {
           consent to such processing and you warrant that all data provided by
           you is accurate.     
         </p>
-        <h3 className="txt-purple">2. Acceptable Use</h3> 
+        <h3 className="txt-purple">2. Acceptable Use</h3>
         <p>
-          {' '}
           2.1 Our full Acceptable Use Policy, sets out all the permitted uses
           and prohibited uses of this site.
         </p>
@@ -106,7 +105,6 @@ const TermsPage = () => {
           relationship with us or another company with whom you do not have a
           relationship.
         </p>
-          
         <h3 className="txt-purple">3. Information you provide to us </h3>
         <p>
           3.1 You represent and warrant that: (a) all registration information

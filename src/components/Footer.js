@@ -33,7 +33,7 @@ const Footer = () => {
 
           <div className="social-links">
             <ul>
-              <li aria label="twitter-social-media">
+              {/* <li aria label="twitter-social-media">
                 <a href="/" title="twitter-social-media" target="_blank">
                   <img src={twitter} alt="twitter-social-media" height={25} />
                 </a>
@@ -42,9 +42,13 @@ const Footer = () => {
                 <a href="/" title="facebook-social-media" target="_blank">
                   <img src={facebook} alt="facebook-social-media" height={25} />
                 </a>
-              </li>
+              </li> */}
               <li aria-label="instagram-social-media">
-                <a href="/" title="instagram-social-media" target="_blank">
+                <a
+                  href="https://www.instagram.com/mtor.io"
+                  title="instagram-social-media"
+                  target="_blank"
+                >
                   <img
                     src={intagram}
                     alt="instagram-social-media"
