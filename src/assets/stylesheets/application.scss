@@ -70,6 +70,7 @@ a {
 }
 
 .btn {
+  text-align: center;
   display: inline-block;
   border-radius: 6px;
   padding: 21px 29px;
@@ -166,4 +167,14 @@ p {
   display: inline-block;
   width: 20px;
   height: 20px;
+}
+
+.sm-full {
+  width: 100%;
+}
+
+@media (min-width: $sm-breakpoint) {
+  .sm-full {
+    width: auto;
+  }
 }

@@ -516,7 +516,7 @@ const TermsPage = () => {
           </a>
         </p>
         <div className="flex-center i-want-to-join">
-          <Link to="/signup/" className="btn primary">
+          <Link to="/signup/" className="btn primary sm-full">
             I want to join!
           </Link>
         </div>
