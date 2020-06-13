@@ -41,7 +41,7 @@ const TermsPage = () => {
             If you do not agree with all of these Terms and Conditions, then you
             are prohibited from using the Site and Services and you must
             discontinue use immediately.
-          </strong>{' '}
+          </strong>
           We recommend that you print a copy of these Terms and Conditions for
           future reference.
         </p>
@@ -79,7 +79,7 @@ const TermsPage = () => {
          
         <p>
           1.7 Additional policies which also apply to your use of the Site
-          include:{' '}
+          include:
         </p>
         <p>
           <span className="txt-purple dot-purple">●</span> Our Privacy Notice,
@@ -88,9 +88,8 @@ const TermsPage = () => {
           consent to such processing and you warrant that all data provided by
           you is accurate.     
         </p>
-        <h3 className="txt-purple">2. Acceptable Use</h3> 
+        <h3 className="txt-purple">2. Acceptable Use</h3>
         <p>
-          {' '}
           2.1 Our full Acceptable Use Policy, sets out all the permitted uses
           and prohibited uses of this site.
         </p>
@@ -106,7 +105,6 @@ const TermsPage = () => {
           relationship with us or another company with whom you do not have a
           relationship.
         </p>
-          
         <h3 className="txt-purple">3. Information you provide to us </h3>
         <p>
           3.1 You represent and warrant that: (a) all registration information
@@ -122,7 +120,7 @@ const TermsPage = () => {
         <p>
           If you know or suspect that anyone other than you knows your user
           information (such as an identification code or user name) and/or
-          password you must promptly notify us at{' '}
+          password you must promptly notify us at
           <a href="mailto:support@mtor.io">support@mtor.io</a>
         </p>
         <p>
@@ -175,7 +173,7 @@ const TermsPage = () => {
         </p>
         <p>
           4.7 If you wish to complain about User Content uploaded by other users
-          please contact us at{' '}
+          please contact us at
           <a href="mailto:support@mtor.io">support@mtor.io</a>.
         </p>
         <h3 className="txt-purple">5. Our content</h3>
@@ -220,7 +218,7 @@ const TermsPage = () => {
           It is not intended to amount to advice on which you should rely. You
           must obtain professional or specialist advice before taking, or
           refraining from taking, any action on the basis of the content on the
-          Site. 
+          Site.
         </p>
         <p>
           5.7  Although we make reasonable efforts to update the information on
@@ -251,7 +249,7 @@ const TermsPage = () => {
           and if you have any questions or complaints in relation to them, you
           should contact the advertiser.
         </p>
-        <h3 className="txt-purple">Site Management</h3>
+        <h3 className="txt-purple">7. Site Management</h3>
         <p>
           7.1  We reserve the right at our sole discretion, to (1) monitor the
           Site for breaches of these Terms and Conditions; (2) take appropriate
@@ -286,6 +284,7 @@ const TermsPage = () => {
           of the Services without notice at any time.
         </p>
         <p>
+          {' '}
           8.2  We cannot guarantee the Site and Services will be available at
           all times. We may experience hardware, software, or other problems or
           need to perform maintenance related to the Site, resulting in
@@ -354,7 +353,7 @@ const TermsPage = () => {
           Site, as applicable. You may terminate your use or participation at
           any time, for any reason, by following the instructions for
           terminating user accounts in your account settings, if available, or
-          by contacting us at{' '}
+          by contacting us at
           <a href="mailto: support@mtor.io"> support@mtor.io.</a>
         </p>
         <p>
@@ -382,7 +381,7 @@ const TermsPage = () => {
         </p>
         <h3 className="txt-purple"> 11.   Mobile Application</h3>
         <p>
-            11.1  If you access the Services via a mobile application, then we
+          11.1  If you access the Services via a mobile application, then we
           grant you a revocable, non-exclusive, non-transferable, limited right
           to install and use the mobile application on wireless electronic
           devices owned or controlled by you, and to access and use the mobile
@@ -453,7 +452,7 @@ const TermsPage = () => {
             You hereby agree to the use of electronic signatures, contracts,
             orders and other records and to electronic delivery of notices,
             policies and records of transactions initiated or completed by us or
-            via the Site.{' '}
+            via the Site.
           </strong>
           You hereby waive any rights or requirements under any statutes,
           regulations, rules, ordinances or other laws in any jurisdiction which
@@ -481,6 +480,7 @@ const TermsPage = () => {
           control.
         </p>
         <p>
+          {' '}
           12.6  If any provision or part of a provision of these Terms and
           Conditions is unlawful, void or unenforceable, that provision or part
           of the provision is deemed severable from these Terms and Conditions
@@ -508,8 +508,8 @@ const TermsPage = () => {
         <p>
           12.10  In order to resolve a complaint regarding the Services or to
           receive further information regarding use of the Services, please
-          contact us by email at{' '}
-          <a href="mailto:support@mtor.io.">support@mtor.io</a>
+          contact us by email at
+          <a href="mailto:support@mtor.io."> support@mtor.io</a>
         </p>
         <p className="small-txt">
           * These terms of use were created using
@@ -518,7 +518,7 @@ const TermsPage = () => {
           </a>
         </p>
         <div className="flex-center i-want-to-join">
-          <Link to="/signup/" className="btn primary">
+          <Link to="/signup/" className="btn primary sm-full">
             I want to join!
           </Link>
         </div>

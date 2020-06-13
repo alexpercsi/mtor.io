@@ -1,5 +1,9 @@
 $primary-brand: #7beec4;
 $secondary-brand: #2f2e50;
+$primary-brand-hover:#63D6AD;
+$secondary-brand-hover:#363478;
+$primary-brand-active:#63D6AD;
+$secondary-brand-active:#363478;
 
 $primary-text: #40414d;
 $secondary-text: #a07fe8;
@@ -7,7 +11,7 @@ $tertiary-text: #9b9b9b;
 $grey-background: #f9f9fa;
 
 $xs-breakpoint: 0px;
-$sm-breakpoint: 600px;
-$md-breakpoint: 960px;
-$lg-breakpoint: 1280px;
-$xl-breakpoint: 1920px;
+$sm-breakpoint: 600px; // mobile
+$md-breakpoint: 960px; // tablets
+$lg-breakpoint: 1280px; // desktop
+$xl-breakpoint: 1920px; // large desktop

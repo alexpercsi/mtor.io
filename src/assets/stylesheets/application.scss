@@ -70,6 +70,7 @@ a {
 }
 
 .btn {
+  text-align: center;
   display: inline-block;
   border-radius: 6px;
   padding: 21px 29px;
@@ -82,6 +83,24 @@ a {
     background-color: $primary-brand;
     color: $secondary-brand;
   }
+}
+
+.btn:hover
+
+ {
+  
+  box-shadow:
+  0 13.2px 121.2px -46px rgba(0, 0, 0, 0.087),
+  0 21.9px 174.6px -46px rgba(0, 0, 0, 0.114),
+  0 100px 335px -46px rgba(0, 0, 0, 0.17);
+  background-color:$secondary-brand-hover;
+}
+.btn.primary:hover {
+   background-color: $primary-brand-hover;
+   box-shadow:
+  0 13.2px 121.2px -46px rgba(0, 0, 0, 0.087),
+  0 21.9px 174.6px -46px rgba(0, 0, 0, 0.114),
+  0 100px 335px -46px rgba(0, 0, 0, 0.17);
 }
 
 .txt-right {
@@ -162,9 +181,18 @@ p {
   line-height: 160%;
 }
 
-.dot-purple{
-  width:20px;
-  height:20px;
-  display:inline-block;
-  font-size: 2rem;
+.dot-purple {
+  display: inline-block;
+  width: .8rem;
+ 
+}
+
+.sm-full {
+  width: 100%;
+}
+
+@media (min-width: $sm-breakpoint) {
+  .sm-full {
+    width: auto;
+  }
 }
