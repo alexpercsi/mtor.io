@@ -26,7 +26,7 @@ const PrivacyPage = () => {
           you have any questions or concerns about our policy, or our practices
           with regards to your personal information, please contact us at
           <a href="mailto:support@mtor.io"> support@mtor.io</a>. <br></br>When
-          you visit our website <a href="https://mtor.io">https://mtor.io</a>{' '}
+          you visit our website <a href="https://mtor.io">https://mtor.io</a>
           and use our services, you trust us with your personal information. We
           take your privacy very seriously. In this privacy policy, we seek to
           explain to you in the clearest way possible what information we
@@ -35,7 +35,7 @@ const PrivacyPage = () => {
           important. If there are any terms in this privacy policy that you do
           not agree with, please discontinue use of our Sites and our services.
           <br></br>This privacy policy applies to all information collected
-          through our website (such as{' '}
+          through our website (such as
           <a href="https://mtor.io">https://mtor.io</a>), and/or any related
           services, sales, marketing or events (we refer to them collectively in
           this privacy policy as the <strong>"Services"</strong>).<br></br>
@@ -151,7 +151,7 @@ const PrivacyPage = () => {
         </p>
         <p>
           <strong>Request Feedback.</strong> We may use your information to
-          request feedback and to contact you about your use of our Services.{' '}
+          request feedback and to contact you about your use of our Services.
         </p>
         <p>
            <strong>To protect our Services.</strong>We may use your information
@@ -418,14 +418,17 @@ const PrivacyPage = () => {
 
         <p>
           If you have questions or comments about this policy, you may email us
-          at <a href="mailto:support@mtor.io">support@mtor.io</a> or by post to:
-          <br />
+          at
+          {/* <a href="mailto:support@mtor.io">support@mtor.io</a> */}
+          <link to=" mailto:support@mtor.io">support@mtor.io</link> or by post
+          to:
+          <br></br>
           Mtor.io
-          <br />
+          <br></br>
           Lloyd-G.-Wells-Str. 20
-          <br />
+          <br></br>
           Berlin
-          <br />
+          <br></br>
           14163 Germany
         </p>
 
@@ -444,15 +447,15 @@ const PrivacyPage = () => {
 
         <p className="small-txt">
           * This privacy policy was created using
-          <a href="https://termly.io/"> Termly’s Privacy Policy Generator.</a>
+          <link to="https://termly.io/">
+            {' '}
+            Termly’s Privacy Policy Generator.
+          </link>
         </p>
         <div className="flex-center i-want-to-join">
           <Link to="/signup/" className="btn primary">
             I want to join!
           </Link>
-          {/* <a href="/" className="btn primary">
-            I want to join!
-          </a> */}
         </div>
       </Container>
     </Layout>
