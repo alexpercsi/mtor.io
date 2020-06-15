@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 
 import Layout from 'components/Layout'
 import Container from 'components/Container'
-import { Link } from 'gatsby';
+import { Link } from 'gatsby'
 
 const PrivacyPage = () => {
   return (

@@ -14,7 +14,7 @@ const Header = () => {
               <img src={logo} alt="mtor.io" />
             </Link>
           </p>
-          <nav id="navbar" className="desktop">
+          <nav className="desktop">
             <ul>
               <li>
                 <Link to="/signup">join</Link>
@@ -27,7 +27,7 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <nav id="navbar" className="mobile">
+          <nav className="mobile">
             <ul>
               <li>
                 <Link to="/join">join</Link>

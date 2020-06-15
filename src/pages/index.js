@@ -16,6 +16,7 @@ const IndexPage = () => {
   return (
     <Layout pageName="home">
       <Helmet>
+    
         <title>mtor.io</title>
       </Helmet>
       <section className="welcome">
