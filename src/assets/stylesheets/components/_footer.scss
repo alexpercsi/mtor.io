@@ -24,31 +24,29 @@ footer {
     padding: 0 0.5em;
     text-decoration: none;
     font-weight: bold;
-      position: relative;
+    position: relative;
   } 
     
-     &:hover {
+  &:hover {
       text-decoration: none;
-      
-      
-    }
-     &:before {
-    content: "";
+  }
+  &:before {
+  content: "";
   position: absolute;
-  width: 100%;
+  width: 10%;
   height: 2px;
   bottom: -5px;
   left: 0;
-   background-color:$primary-brand;
+  background-color:$primary-brand;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
     }
-     &:hover::before {
+  &:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
-  }
+}
 } 
   
 

@@ -446,9 +446,8 @@ const PrivacyPage = () => {
         </p>
 
         <p className="small-txt">
-          * This privacy policy was created using
-          <link to="https://termly.io/">
-            {' '}
+          * This privacy policy was created using   
+          <link to= "https://termly.io/">
             Termly’s Privacy Policy Generator.
           </link>
         </p>
