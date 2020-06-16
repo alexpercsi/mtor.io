@@ -30,7 +30,7 @@ const Header = () => {
           <nav className="mobile">
             <ul>
               <li>
-                <Link to="/join">join</Link>
+                <Link to="/signup">join</Link>
               </li>
             </ul>
           </nav>
