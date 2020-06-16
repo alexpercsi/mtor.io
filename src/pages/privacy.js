@@ -420,7 +420,7 @@ const PrivacyPage = () => {
           If you have questions or comments about this policy, you may email us
           at
           {/* <a href="mailto:support@mtor.io">support@mtor.io</a> */}
-          <link to=" mailto:support@mtor.io">support@mtor.io</link> or by post
+          <Link to=" mailto:support@mtor.io">support@mtor.io</Link> or by post
           to:
           <br></br>
           Mtor.io
@@ -447,9 +447,9 @@ const PrivacyPage = () => {
 
         <p className="small-txt">
           * This privacy policy was created using   
-          <link to= "https://termly.io/">
+          <Link to= "https://termly.io/">
             Termly’s Privacy Policy Generator.
-          </link>
+          </Link>
         </p>
         <div className="flex-center i-want-to-join">
           <Link to="/signup/" className="btn primary">
