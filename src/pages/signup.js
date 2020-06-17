@@ -12,7 +12,7 @@ const SignupPage = () => {
         <title>Join us</title>
       </Helmet>
       <Container>
-        <ReactTypeformEmbed url="https://edenwhitcomb.typeform.com/to/ThgIWs" />
+        <ReactTypeformEmbed url="https://form.typeform.com/to/Q1vRO1x2" />
       </Container>
     </Layout>
   );
