@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Container from 'components/Container';
 import twitter from 'assets/images/social-twitter.png';
-import intagram from 'assets/images/social-instagram.png';
+import instagram from 'assets/images/social-instagram.png';
 import facebook from 'assets/images/social-facebook.png';
 
 const Footer = () => {
@@ -50,7 +50,7 @@ const Footer = () => {
                   target="_blank"
                 >
                   <img
-                    src={intagram}
+                    src={ins`tagram}
                     alt="instagram-social-media"
                     height={25}
                   />
