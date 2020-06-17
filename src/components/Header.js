@@ -20,10 +20,10 @@ const Header = () => {
                 <Link to="/signup">join</Link>
               </li>
               <li>
-                <Link to="#how-it-works">how it works</Link>
+                <Link to="/#how-it-works">how it works</Link>
               </li>
               <li>
-                <Link to="#community">community</Link>
+                <Link to="/#community">community</Link>
               </li>
             </ul>
           </nav>
