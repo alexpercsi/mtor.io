@@ -50,7 +50,7 @@ const Footer = () => {
                   target="_blank"
                 >
                   <img
-                    src={ins`tagram}
+                    src={instagram}
                     alt="instagram-social-media"
                     height={25}
                   />
