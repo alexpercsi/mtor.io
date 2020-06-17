@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        <div className="divider"></div>
+        {/* <div className="divider"></div> */}
         <div className="footerWrapper">
           <div>
             <Link to="/">
