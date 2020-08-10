@@ -16,7 +16,6 @@ const IndexPage = () => {
   return (
     <Layout pageName="home">
       <Helmet>
-    
         <title>mtor.io - a community for mentors and mentees</title>
       </Helmet>
       <section className="welcome">
@@ -24,7 +23,7 @@ const IndexPage = () => {
           <div className="welcomeText">
             <h4 className="tagline">Mentorship Platform</h4>
             <h1 className="title dark">
-              Get conected to your peers to learn or teach
+              Get connected to your peers to learn or teach
             </h1>
             <h3 className="subtitle dark">
               Join a network that curate professional conections
