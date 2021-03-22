@@ -5,8 +5,6 @@ import Layout from 'components/Layout'
 import Container from 'components/Container'
 import { Link } from 'gatsby';
 
-import address from 'assets/images/address.png'
-
 const ImprintPage = () => {
   return (
     <Layout pageName="imprint">
@@ -18,7 +16,10 @@ const ImprintPage = () => {
           <h1 className="header1-fontsize">Imprint</h1>
            <address> Name &amp; Contact <br />
              Mtor.io is a project by:<br /> 
-            <img src={address} alt="contact details for mtor.io - impressum" />
+             Alexandru Percsi <br />
+              c/o RA Matutis <br />
+              Berliner Straße 57 <br />
+              14467 Potsdam <br />
             <p>This is a non-profit, non-commercial project. There is no legal obligation for
             neither the mentor nor &quot;Mtor.io&quot; and its founders that can be inferred by any communication or interaction that occurs between
              mentors and members of the group (referred to as ‘mentees’). The
