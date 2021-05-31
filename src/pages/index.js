@@ -7,21 +7,18 @@ import stepTwo from 'assets/images/illustration2.png';
 import stepThree from 'assets/images/illustration3.png';
 import community from 'assets/images/illustration-community-desktop.png';
 import organizing from 'assets/images/illustration-organizing-ideas.png';
-import mentees from 'assets/images/mentees.png';
-import intro from 'assets/images/icon-intro.png';
-import members from 'assets/images/icon-total-members.png';
 import { Link } from 'gatsby';
 
 const IndexPage = () => {
   return (
     <Layout pageName="home">
       <Helmet>
-        <title>mtor.io - a community for mentors and mentees</title>
+        <title>mtor.io cv builder - kickstart your professional resume</title>
       </Helmet>
       <section className="welcome">
         <Container>
           <div className="welcomeText">
-            <h4 className="tagline">Mentorship Platform</h4>
+            <h4 className="tagline">CV Builder - Kickstart your professional resume</h4>
             <h1 className="title dark">
               Get connected to your peers to learn or teach
             </h1>

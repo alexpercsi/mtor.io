@@ -25,6 +25,9 @@ const Header = () => {
               <li>
                 <Link to="/#community">community</Link>
               </li>
+              <li>
+                <Link to="/cv-builder">cv builder</Link>
+              </li>
             </ul>
           </nav>
           <nav className="mobile">
