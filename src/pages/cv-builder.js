@@ -3,11 +3,9 @@ import { Helmet } from 'react-helmet';
 import Layout from 'components/Layout';
 import Container from 'components/Container';
 import organizing from 'assets/images/illustration-organizing-ideas.png';
+import cvThemeBlack from 'assets/images/cv-themes/black.png';
+import cvThemeTeal from 'assets/images/cv-themes/teal.png';
 import { Link } from 'gatsby';
-
-const generateCV = () => {
-  console.log("test");
-};
 
 const CVBuilderPage = () => {
 
@@ -45,40 +43,42 @@ const CVBuilderPage = () => {
 
       <Container>
         <div className="form" id="form">
+          <br /><br />
           <p className="subtitle white">
-            <h3 className="formLabel">CV Format </h3>
-            <input type="radio" name="format" onClick={() => {setFormat(0)}} checked={format===0} /> Compact
-            <input type="radio" name="format" onClick={() => {setFormat(1)}} checked={format!==0} /> Long
+            <h2 className="formLabel">CV Format </h2>
+            <input type="radio" name="format" onClick={() => {setFormat(0)}} checked={format===0} /> <label>Compact</label>
+            <input type="radio" name="format" onClick={() => {setFormat(1)}} checked={format!==0} /> <label>Long</label>
           </p>
           <p className="subtitle white">
-            <span className="formLabel">Bullets or Paragraphs? </span>
-            <input type="radio" name="para" onClick={() => {setUseParagraphs(0)}} checked={useParagraphs===0} /> Bullets
-            <input type="radio" name="para" onClick={() => {setUseParagraphs(1)}} checked={useParagraphs===1} /> Paragraphs
+            <h2 className="formLabel">Bullets or Paragraphs? </h2>
+            <input type="radio" name="para" onClick={() => {setUseParagraphs(0)}} checked={useParagraphs===0} /> <label>Bullets</label>
+            <input type="radio" name="para" onClick={() => {setUseParagraphs(1)}} checked={useParagraphs===1} /> <label>Paragraphs</label>
           </p>
           <p className="subtitle white">
-            <span className="formLabel">Include a photo </span>
-            <input type="radio" name="photo" onClick={() => {setUsePhoto(0)}} checked={usePhoto===0} /> Yes
-            <input type="radio" name="photo" onClick={() => {setUsePhoto(1)}} checked={usePhoto===1} /> No
+            <h2 className="formLabel">Include a photo </h2>
+            <input type="radio" name="photo" onClick={() => {setUsePhoto(0)}} checked={usePhoto===0} /> <label>Yes</label>
+            <input type="radio" name="photo" onClick={() => {setUsePhoto(1)}} checked={usePhoto===1} /> <label>No</label>
           </p>
           <p className="subtitle white">
-            <span className="formLabel">Include a Languages section? </span>
-            <input type="radio" name="lang" onClick={() => {setUseLanguages(0)}} checked={useLanguages===0} /> Yes
-            <input type="radio" name="lang" onClick={() => {setUseLanguages(1)}} checked={useLanguages===1} /> No
+            <h2 className="formLabel">Include a Languages section? </h2>
+            <input type="radio" name="lang" onClick={() => {setUseLanguages(0)}} checked={useLanguages===0} /> <label>Yes</label>
+            <input type="radio" name="lang" onClick={() => {setUseLanguages(1)}} checked={useLanguages===1} /> <label>No</label>
           </p>
           <p className="subtitle white">
-            <span className="formLabel">Include a References section? </span>
-            <input type="radio" name="ref" onClick={() => {setUseReferences(0)}} checked={useReferences===0} /> Yes
-            <input type="radio" name="ref" onClick={() => {setUseReferences(1)}} checked={useReferences===1} /> No
+            <h2 className="formLabel">Include a References section? </h2>
+            <input type="radio" name="ref" onClick={() => {setUseReferences(0)}} checked={useReferences===0} /> <label>Yes</label>
+            <input type="radio" name="ref" onClick={() => {setUseReferences(1)}} checked={useReferences===1} /> <label>No</label>
           </p>
           <p className="subtitle white">
-            <span className="formLabel">Include a Certifications section? </span>
-            <input type="radio" name="cert" onClick={() => {setUseCertifications(0)}} checked={useCertifications===0} /> Yes
-            <input type="radio" name="cert" onClick={() => {setUseCertifications(1)}} checked={useCertifications===1} /> No
+            <h2 className="formLabel">Include a Certifications section? </h2>
+            <input type="radio" name="cert" onClick={() => {setUseCertifications(0)}} checked={useCertifications===0} /> <label>Yes</label>
+            <input type="radio" name="cert" onClick={() => {setUseCertifications(1)}} checked={useCertifications===1} /> <label>No</label>
           </p>
-          <p className="subtitle white">
-            <span className="formLabel">Choose a color scheme </span><br />
-            <img src="assets/images/cv-themes/black.png" onClick={() => {setStyle(0)}} className={style===0?"selectedStyle":""} />
-            <img src="assets/images/cv-themes/teal.png" onClick={() => {setStyle(1)}} className={style===1?"selectedStyle":""} />
+          <p className="subtitle white cvThemes">
+            <h2 className="formLabel">Choose a color scheme </h2> <br />
+            <img src={cvThemeBlack} onClick={() => {setStyle(0)}} className={style===0?"selectedStyle black":"black"} />
+            <img src={cvThemeTeal} onClick={() => {setStyle(1)}} className={style===1?"selectedStyle teal":"teal"} /> <br />
+            <span>Selected color scheme <span className={style===0?"black":"teal"}>{style===0?"black":"teal"}</span></span>
           </p>
           <a href={`http://localhost:8001/generate-CV?prefsMap=${format}${style}${useParagraphs}${usePhoto}${useLanguages}${useReferences}${useCertifications}`} className="btn primary">
               Build my CV!
