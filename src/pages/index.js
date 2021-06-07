@@ -13,12 +13,12 @@ const IndexPage = () => {
   return (
     <Layout pageName="home">
       <Helmet>
-        <title>mtor.io cv builder - kickstart your professional resume</title>
+        <title>mtor.io - a community for mentors and mentees</title>
       </Helmet>
       <section className="welcome">
         <Container>
           <div className="welcomeText">
-            <h4 className="tagline">CV Builder - Kickstart your professional resume</h4>
+            <h4 className="tagline">Mentorship Platform</h4>
             <h1 className="title dark">
               Get connected to your peers to learn or teach
             </h1>
@@ -152,7 +152,7 @@ const IndexPage = () => {
           x="0"
           y="0"
         >
-          <polygon class="fill-white" points="2560 0 0 0 0 100"></polygon>
+          <polygon className="fill-white" points="2560 0 0 0 0 100"></polygon>
         </svg>
         <Container>
           {/* <div className="section-numbers">

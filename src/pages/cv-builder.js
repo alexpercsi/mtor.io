@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from 'components/Layout';
 import Container from 'components/Container';
@@ -6,19 +6,28 @@ import organizing from 'assets/images/illustration-organizing-ideas.png';
 import { Link } from 'gatsby';
 
 const generateCV = () => {
-  alert(1);
+  console.log("test");
 };
 
 const CVBuilderPage = () => {
+
+  const [format, setFormat] = useState(0);
+  const [useParagraphs, setUseParagraphs] = useState(0);
+  const [usePhoto, setUsePhoto] = useState(0);
+  const [useLanguages, setUseLanguages] = useState(0);
+  const [useReferences, setUseReferences] = useState(0);
+  const [useCertifications, setUseCertifications] = useState(0);
+  const [style, setStyle] = useState(0);
+
   return (
     <Layout pageName="home">
       <Helmet>
-        <title>mtor.io - a community for mentors and mentees</title>
+        <title>mtor.io cv builder - kickstart your professional resume</title>
       </Helmet>
       <section className="welcome">
         <Container>
           <div className="welcomeText">
-            <h4 className="tagline">mtor.io</h4>
+            <h4 className="tagline">CV Builder - Kickstart your professional resume</h4>
             <h1 className="title dark">
               CV Builder
             </h1>
@@ -37,30 +46,43 @@ const CVBuilderPage = () => {
       <Container>
         <div className="form" id="form">
           <p className="subtitle white">
-            <span className="formLabel">CV Format </span>
-            <input type="radio" name="format" checked="checked" /> Compact
-            <input type="radio" name="format" /> Extended
+            <h3 className="formLabel">CV Format </h3>
+            <input type="radio" name="format" onClick={() => {setFormat(0)}} checked={format===0} /> Compact
+            <input type="radio" name="format" onClick={() => {setFormat(1)}} checked={format!==0} /> Long
           </p>
           <p className="subtitle white">
-            <span className="formLabel">Include a sidebar? </span>
-            <input type="radio" name="sidebar" checked="checked" /> Yes
-            <input type="radio" name="sidebar" /> No
+            <span className="formLabel">Bullets or Paragraphs? </span>
+            <input type="radio" name="para" onClick={() => {setUseParagraphs(0)}} checked={useParagraphs===0} /> Bullets
+            <input type="radio" name="para" onClick={() => {setUseParagraphs(1)}} checked={useParagraphs===1} /> Paragraphs
           </p>
           <p className="subtitle white">
             <span className="formLabel">Include a photo </span>
-            <input type="radio" name="photo" checked="checked" /> Yes
-            <input type="radio" name="photo" /> No
+            <input type="radio" name="photo" onClick={() => {setUsePhoto(0)}} checked={usePhoto===0} /> Yes
+            <input type="radio" name="photo" onClick={() => {setUsePhoto(1)}} checked={usePhoto===1} /> No
+          </p>
+          <p className="subtitle white">
+            <span className="formLabel">Include a Languages section? </span>
+            <input type="radio" name="lang" onClick={() => {setUseLanguages(0)}} checked={useLanguages===0} /> Yes
+            <input type="radio" name="lang" onClick={() => {setUseLanguages(1)}} checked={useLanguages===1} /> No
+          </p>
+          <p className="subtitle white">
+            <span className="formLabel">Include a References section? </span>
+            <input type="radio" name="ref" onClick={() => {setUseReferences(0)}} checked={useReferences===0} /> Yes
+            <input type="radio" name="ref" onClick={() => {setUseReferences(1)}} checked={useReferences===1} /> No
+          </p>
+          <p className="subtitle white">
+            <span className="formLabel">Include a Certifications section? </span>
+            <input type="radio" name="cert" onClick={() => {setUseCertifications(0)}} checked={useCertifications===0} /> Yes
+            <input type="radio" name="cert" onClick={() => {setUseCertifications(1)}} checked={useCertifications===1} /> No
           </p>
           <p className="subtitle white">
             <span className="formLabel">Choose a color scheme </span><br />
-            <input type="radio" name="style" checked="checked" /> <img src="assets/images/cv-themes/plain.png" />
-            <input type="radio" name="style" checked="checked" /> <img src="assets/images/cv-themes/blue.png" />
-            <input type="radio" name="style" checked="checked" /> <img src="assets/images/cv-themes/green.png" />
-            <input type="radio" name="style" checked="checked" /> <img src="assets/images/cv-themes/tan.png" />
+            <img src="assets/images/cv-themes/black.png" onClick={() => {setStyle(0)}} className={style===0?"selectedStyle":""} />
+            <img src="assets/images/cv-themes/teal.png" onClick={() => {setStyle(1)}} className={style===1?"selectedStyle":""} />
           </p>
-          {/* <Button onClick={()=>{generateCV()}}  className="btn primary">
+          <a href={`http://localhost:8001/generate-CV?prefsMap=${format}${style}${useParagraphs}${usePhoto}${useLanguages}${useReferences}${useCertifications}`} className="btn primary">
               Build my CV!
-          </Button> */}
+          </a>
         </div>
       </Container>
 
