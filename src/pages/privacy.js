@@ -420,16 +420,8 @@ const PrivacyPage = () => {
           If you have questions or comments about this policy, you may email us
           at
           {/* <a href="mailto:support@mtor.io">support@mtor.io</a> */}
-          <Link to=" mailto:support@mtor.io">support@mtor.io</Link> or by post
-          to:
-          <br></br>
-          Mtor.io
-          <br></br>
-          Lloyd-G.-Wells-Str. 20
-          <br></br>
-          Berlin
-          <br></br>
-          14163 Germany
+          <Link to="mailto:support@mtor.io">support@mtor.io</Link> or by post
+          to the address specified on our <Link to="/imprint">Imprint page</Link>
         </p>
 
         <h3 id="how-can-you" className="txt-purple">

@@ -22,11 +22,8 @@ const TermsPage = () => {
         <p>
           1.1 These Terms and Conditions constitute a legally binding agreement
           made between you, whether personally or on behalf of an entity
-          <strong> (you)</strong>, and mtor.io located at 
-          <strong>
-            Lloyd-G.-Wells-Str. 20, Berlin 14163, Germany (we, us)
-          </strong>
-          , concerning your access to and use of the (
+          <strong> (you)</strong>, and mtor.io represented by Alexandru Percsi  
+          (see <Link to="/imprint">Imprint</Link>), concerning your access to and use of the (
           <a href="https://mtor.io">https://mtor.io</a>) website as well as any
           related applications (the <strong>Site</strong>).
         </p>
