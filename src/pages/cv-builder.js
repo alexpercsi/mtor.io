@@ -55,32 +55,32 @@ const CVBuilderPage = () => {
             <input type="radio" name="para" onClick={() => {setUseParagraphs(1)}} checked={useParagraphs===1} /> <label>Paragraphs</label>
           </p>
           <p className="subtitle white">
-            <h2 className="formLabel">Include a photo </h2>
-            <input type="radio" name="photo" onClick={() => {setUsePhoto(0)}} checked={usePhoto===0} /> <label>Yes</label>
-            <input type="radio" name="photo" onClick={() => {setUsePhoto(1)}} checked={usePhoto===1} /> <label>No</label>
+            <h2 className="formLabel">Include a photo? </h2>
+            <input type="radio" name="photo" onClick={() => {setUsePhoto(0)}} checked={usePhoto===0} /> <label>No</label>
+            <input type="radio" name="photo" onClick={() => {setUsePhoto(1)}} checked={usePhoto===1} /> <label>Yes</label>
           </p>
           <p className="subtitle white">
             <h2 className="formLabel">Include a Languages section? </h2>
-            <input type="radio" name="lang" onClick={() => {setUseLanguages(0)}} checked={useLanguages===0} /> <label>Yes</label>
-            <input type="radio" name="lang" onClick={() => {setUseLanguages(1)}} checked={useLanguages===1} /> <label>No</label>
+            <input type="radio" name="lang" onClick={() => {setUseLanguages(0)}} checked={useLanguages===0} /> <label>No</label>
+            <input type="radio" name="lang" onClick={() => {setUseLanguages(1)}} checked={useLanguages===1} /> <label>Yes</label>
           </p>
           <p className="subtitle white">
             <h2 className="formLabel">Include a References section? </h2>
-            <input type="radio" name="ref" onClick={() => {setUseReferences(0)}} checked={useReferences===0} /> <label>Yes</label>
-            <input type="radio" name="ref" onClick={() => {setUseReferences(1)}} checked={useReferences===1} /> <label>No</label>
+            <input type="radio" name="ref" onClick={() => {setUseReferences(0)}} checked={useReferences===0} /> <label>No</label>
+            <input type="radio" name="ref" onClick={() => {setUseReferences(1)}} checked={useReferences===1} /> <label>Yes</label>
           </p>
           <p className="subtitle white">
             <h2 className="formLabel">Include a Certifications section? </h2>
-            <input type="radio" name="cert" onClick={() => {setUseCertifications(0)}} checked={useCertifications===0} /> <label>Yes</label>
-            <input type="radio" name="cert" onClick={() => {setUseCertifications(1)}} checked={useCertifications===1} /> <label>No</label>
+            <input type="radio" name="cert" onClick={() => {setUseCertifications(0)}} checked={useCertifications===0} /> <label>No</label>
+            <input type="radio" name="cert" onClick={() => {setUseCertifications(1)}} checked={useCertifications===1} /> <label>Yes</label>
           </p>
           <p className="subtitle white cvThemes">
-            <h2 className="formLabel">Choose a color scheme </h2> <br />
+            <h2 className="formLabel">Choose a colour scheme </h2> <br />
             <img src={cvThemeBlack} onClick={() => {setStyle(0)}} className={style===0?"selectedStyle black":"black"} />
             <img src={cvThemeTeal} onClick={() => {setStyle(1)}} className={style===1?"selectedStyle teal":"teal"} /> <br />
-            <span>Selected color scheme <span className={style===0?"black":"teal"}>{style===0?"black":"teal"}</span></span>
+            <span>Selected colour scheme <span className={style===0?"black":"teal"}>{style===0?"black":"teal"}</span></span>
           </p>
-          <a href={`http://localhost:8001/generate-CV?prefsMap=${format}${style}${useParagraphs}${usePhoto}${useLanguages}${useReferences}${useCertifications}`} className="btn primary">
+          <a href={`https://cv-service.mtor.io/generate-CV?prefsMap=${format}${style}${useParagraphs}${usePhoto}${useLanguages}${useReferences}${useCertifications}`} className="btn primary">
               Build my CV!
           </a>
         </div>
@@ -93,7 +93,8 @@ const CVBuilderPage = () => {
             <div className="community-content">
               <div className="comunity-txt">
                 <h3>
-                  By clicking "Build my CV" you agree to our Terms of Service and Privacy Policy. 
+                  By clicking "Build my CV" you agree to our <Link to="/terms">Terms of Service</Link> and&nbsp;
+                <Link to="/privacy">Privacy Policy</Link>
                 </h3>
               </div>
             </div>
