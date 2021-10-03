@@ -12,6 +12,38 @@
     width: 320px;
     font-weight: 800;
     margin-bottom: 15px;
+    height:130px;
+  }
+
+  .animated {
+    div {
+      opacity: 0;
+      animation: appear 4s steps(100, end) forwards;
+      animation-iteration-count:infinite;
+      -webkit-user-select: none;
+      user-select: none;
+      margin-top:-10px;
+    }
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
   }
 
   .subtitle {

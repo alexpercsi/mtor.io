@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from 'components/Layout';
 import Container from 'components/Container';
@@ -10,6 +10,17 @@ import organizing from 'assets/images/illustration-organizing-ideas.png';
 import { Link } from 'gatsby';
 
 const IndexPage = () => {
+
+  const [currentTagline, setCurrentTagline] = useState(0);
+  const taglines = ['connected to peers', 'interview guidance', 'job opportunities', 'code reviewed', 'CV advice'];
+  useEffect(() => {
+    const updateTagline = () =>  {
+        setCurrentTagline(currentTagline => (currentTagline+1)%taglines.length);
+    }
+    const interval = setInterval(updateTagline, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Layout pageName="home">
       <Helmet>
@@ -19,8 +30,10 @@ const IndexPage = () => {
         <Container>
           <div className="welcomeText">
             <h4 className="tagline">Mentorship Platform</h4>
-            <h1 className="title dark">
-              Get connected to your peers to learn or teach
+            <h1 className="title dark animated">
+              Get...
+              <br />
+              <div>{taglines[currentTagline]}</div>
             </h1>
             <h3 className="subtitle dark">
               Join a network that curates professional connections
