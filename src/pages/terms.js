@@ -13,7 +13,7 @@ const TermsPage = () => {
       </Helmet>
       <Container>
         <h2 className="txt-center pages-title no-bottom-margin">
-          Terms and Condition
+          Terms and Conditions
         </h2>
         <h4 className="txt-center pages-subtitle ">
           Last updated May 24, 2020
