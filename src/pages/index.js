@@ -7,6 +7,10 @@ import stepTwo from 'assets/images/illustration2.png';
 import stepThree from 'assets/images/illustration3.png';
 import community from 'assets/images/illustration-community-desktop.png';
 import organizing from 'assets/images/illustration-organizing-ideas.png';
+import mentees from 'assets/images/icon-mentees.png';
+import intro from 'assets/images/icon-intro.png';
+import members from 'assets/images/icon-total-members.png';
+
 import { Link } from 'gatsby';
 
 const IndexPage = () => {
@@ -168,7 +172,7 @@ const IndexPage = () => {
           <polygon className="fill-white" points="2560 0 0 0 0 100"></polygon>
         </svg>
         <Container>
-          {/* <div className="section-numbers">
+          <div className="section-numbers">
             <h2 className="txt-white">Mtor in numbers</h2>
             <ul className="column">
               <li className="list-item">
@@ -177,14 +181,14 @@ const IndexPage = () => {
                 </div>
                  <span className="numbers">33</span> 
 
-                <h4 className="txt-center txt-white">Mentors/ Mentees</h4>
+                <h4 className="txt-center txt-white">Registered Mentors</h4>
               </li>
 
               <li className="list-item">
                 <div className="icon-container">
                   <img src={intro} alt="" width="60" />
                 </div>
-               <span className="numbers">45</span>
+               <span className="numbers">351</span>
                 <h4 className="txt-center txt-white">Total Members</h4>
               </li>
               <li className="list-item">
@@ -195,7 +199,7 @@ const IndexPage = () => {
                 <h4 className="txt-center txt-white">Intros made</h4>
               </li>
             </ul>
-          </div> */}
+          </div>
         </Container>
       </div>
     </Layout>
