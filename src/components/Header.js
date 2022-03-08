@@ -26,6 +26,9 @@ const Header = () => {
                 <Link to="/#community">community</Link>
               </li>
               <li>
+                <Link to="/mentors">mentors</Link>
+              </li>
+              <li>
                 <Link to="/cv-builder">cv builder</Link>
               </li>
             </ul>

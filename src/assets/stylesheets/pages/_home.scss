@@ -83,6 +83,11 @@
   }
 }
 
+
+.upside-down {
+  transform:rotate(180deg);
+}
+
 .li {
   display: flex;
   justify-content: center;
