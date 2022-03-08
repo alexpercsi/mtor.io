@@ -3,19 +3,79 @@ import { Helmet } from 'react-helmet';
 import Layout from 'components/Layout';
 import Container from 'components/Container';
 import organizing from 'assets/images/illustration-organizing-ideas.png';
-import cvThemeBlack from 'assets/images/cv-themes/black.png';
-import cvThemeTeal from 'assets/images/cv-themes/teal.png';
+import MentorCard from '../components/MentorCard';
+import { StaggeredMotion, spring } from 'react-motion'
+import alexpercsi from 'assets/images/Alex Percsi.png';
+import edenwhitcomb from 'assets/images/Eden Whitcomb.png';
+import glaubergriffante from 'assets/images/Glauber Griffante.png';
+import jodibarrow from 'assets/images/Jodi Barrow.png';
+import lisaquatmann from 'assets/images/Lisa Quatmann.png';
+import lorenzodenobili from 'assets/images/Lorenzo De Nobili.png';
+import markotoole from 'assets/images/Mark O_Toole.png';
+import paigemcguigan from 'assets/images/Paige McGuigan.png';
 import { Link } from 'gatsby';
 
 const MentorsPage = () => {
 
-  const [format, setFormat] = useState(0);
-  const [useParagraphs, setUseParagraphs] = useState(0);
-  const [usePhoto, setUsePhoto] = useState(0);
-  const [useLanguages, setUseLanguages] = useState(0);
-  const [useReferences, setUseReferences] = useState(0);
-  const [useCertifications, setUseCertifications] = useState(0);
-  const [style, setStyle] = useState(0);
+   const allMentors = [
+    {name: "Eden Whitcomb", image: edenwhitcomb, domains: {leadership:1, frontend:0, php: 0, recruitment: 1}},
+    {name: "Alex Percsi", image: alexpercsi, domains: {leadership:1, frontend:1, php: 0, recruitment: 0}},
+    {name: "Lisa Quatmann", image: lisaquatmann, domains: {leadership:1, frontend:0, php: 0, recruitment: 0}},
+    {name: "Lorenzo De Nobili", image: lorenzodenobili, domains: {leadership:1, frontend:1, php: 0, recruitment: 0}},
+    {name: "Glauber Griffante", image: glaubergriffante, domains: {leadership:0, frontend:0, php: 1, recruitment: 0}},
+    {name: "Mark O'Toole", image: markotoole, domains: {leadership:0, frontend:0, php: 0, recruitment: 1}},
+    {name: "Jodi Barrow", image: jodibarrow, domains: {leadership:0, frontend:0, php: 0, recruitment: 1}},
+    {name: "Paige McGuigan", image: paigemcguigan, domains: {leadership:0, frontend:0, php: 0, recruitment: 1}},
+  ];
+  const initialState = [
+    {
+      key: "leadership",
+      name: "Leadership",
+      selected:true
+    },
+    {
+      key: "frontend",
+      name: "Frontend",
+      selected:true
+    },
+    {
+      key: "php",
+      name: "PHP",
+      selected:true
+    },
+    {
+      key: "recruitment",
+      name: "Recruitment",
+      selected:true
+    }
+  ]
+  const [domains, setDomains] = useState(initialState);
+  const [selectedMentors, setSelectedMentors] = useState(allMentors);
+
+  const updateState = domain => {
+    const newState = [...domains];
+    for (let i = 0; i < newState.length; i++) {
+      if (newState[i].key===domain.key) {
+        newState[i].selected=!newState[i].selected;
+      }
+    }
+    const newSelectedMentors = [];
+    for (let i = 0; i < allMentors.length; i++) {
+      let found = false;
+      for (let j = 0; j < newState.length; j++) {
+        if (newState[j].selected && allMentors[i].domains[newState[j].key]) {
+          found = true;
+          break;
+        }
+      }
+      if (found) {
+        newSelectedMentors.push(allMentors[i]);
+      }
+      
+    }
+    setDomains(newState);
+    setSelectedMentors(newSelectedMentors);
+  }
 
   return (
     <Layout pageName="home">
@@ -30,7 +90,7 @@ const MentorsPage = () => {
               Meet the Mentors
             </h1>
             <h3 className="subtitle dark">
-            Mtor has over 450 members to date, and growing daily. Meet some of our mentors below, or sign up to see everyone on our slack channel.
+            Mtor has over 450 members to date, and growing daily. Meet some of our mentors below, or <a href="/signup">sign up</a> to see everyone on our slack channel.
             </h3>
           </div>
         </Container>
@@ -53,14 +113,42 @@ const MentorsPage = () => {
         <Container>
           <div className="community">
             <div className="community-content">
-              <div className="comunity-txt">
-                <h3>
-                  By clicking "Build my CV" you agree to our <Link to="/terms">Terms of Service</Link> and&nbsp;
-                <Link to="/privacy">Privacy Policy</Link>
-                </h3>
+              <div className="tag-cloud">
+                {
+                domains.map(domain => <span class={domain.selected?"domain":"domain disabled"} onClick={() => updateState(domain)} key={domain.key}>{domain.name}</span>)
+                }
+              </div>
+              <StaggeredMotion
+                defaultStyles={selectedMentors.map(() => ({ opacity: 0, translateY: 0 }))}
+                key={selectedMentors}
+                styles={prevInterpolatedStyles =>
+                  prevInterpolatedStyles.map((_, i) => {
+                    return i === 0
+                      ? { opacity: spring(1, {stiffness:150, damping:15}), translateY: spring(60, {stiffness:150, damping:15}) }
+                      : {
+                        opacity: prevInterpolatedStyles[i - 1].opacity,
+                        translateY: spring(prevInterpolatedStyles[i - 1].translateY, {stiffness:150, damping:15})
+                      }
+                  })
+                }
+              >
+                {interpolatingStyles => {
+                    return (
+                      <div className="mentors-grid">
+                        {interpolatingStyles.map((style, i) => (
+                          i < selectedMentors.length && <MentorCard name={selectedMentors[i].name} image={selectedMentors[i].image} key={i} style={{opacity:style.opacity, translateY:style.translateY}}></MentorCard>
+                        ))}
+                      </div>
+                    );
+                  }}
+              </StaggeredMotion>
+              </div>
+              <div>Join us and help shape the next generation of experts!<br /><br />
+              <Link to="/signup/" className="btn primary">
+                Apply to be a mentor
+              </Link>
               </div>
             </div>
-          </div>
         </Container>
       </div>
       <Container>
