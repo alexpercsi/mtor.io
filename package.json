@@ -11,7 +11,6 @@
     "gatsby-plugin-sass": "2.3.2",
     "gatsby-plugin-scroll-reveal": "0.0.7",
     "gatsby-source-filesystem": "2.3.8",
-    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -20,7 +19,9 @@
     "react-typeform-embed": "0.2.1",
     "smooth-scroll": "16.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sass": "^1.49.9"
+  },
   "keywords": [
     "mtor"
   ],
