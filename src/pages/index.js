@@ -188,7 +188,7 @@ const IndexPage = () => {
                 <div className="icon-container">
                   <img src={intro} alt="" width="60" />
                 </div>
-               <span className="numbers">351</span>
+               <span className="numbers">502</span>
                 <h4 className="txt-center txt-white">Total Members</h4>
               </li>
               <li className="list-item">

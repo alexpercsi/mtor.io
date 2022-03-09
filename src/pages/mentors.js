@@ -90,7 +90,7 @@ const MentorsPage = () => {
               Meet the Mentors
             </h1>
             <h3 className="subtitle dark">
-            Mtor has over 450 members to date, and growing daily. Meet some of our mentors below, or <a href="/signup">sign up</a> to see everyone on our slack channel.
+            Mtor has over 500 members to date, and growing daily. Meet some of our mentors below, or <a href="/signup">sign up</a> to see everyone on our slack channel.
             </h3>
           </div>
         </Container>
