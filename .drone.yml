@@ -4,7 +4,7 @@ name: build and deploy
 
 steps:
   - name: build and tar
-    image: node
+    image: node:16
     commands:
     - yarn
     - yarn build
