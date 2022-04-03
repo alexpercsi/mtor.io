@@ -111,23 +111,23 @@ const MentorsPage = () => {
       </div>      
       <div className="communityWrapper" id="community">
         <Container>
+          <div className="tag-cloud">
+            {
+            domains.map(domain => <span class={domain.selected?"domain":"domain disabled"} onClick={() => updateState(domain)} key={domain.key}>{domain.name}</span>)
+            }
+          </div>
           <div className="community">
             <div className="community-content">
-              <div className="tag-cloud">
-                {
-                domains.map(domain => <span class={domain.selected?"domain":"domain disabled"} onClick={() => updateState(domain)} key={domain.key}>{domain.name}</span>)
-                }
-              </div>
               <StaggeredMotion
-                defaultStyles={selectedMentors.map(() => ({ opacity: 0, translateY: 0 }))}
+                defaultStyles={selectedMentors.map(() => ({ opacity: 0, marginTop: 0 }))}
                 key={selectedMentors}
                 styles={prevInterpolatedStyles =>
                   prevInterpolatedStyles.map((_, i) => {
                     return i === 0
-                      ? { opacity: spring(1, {stiffness:150, damping:15}), translateY: spring(60, {stiffness:150, damping:15}) }
+                      ? { opacity: spring(1, {stiffness:50, damping:30}), marginTop: spring(-60, {stiffness:150, damping:20}) }
                       : {
                         opacity: prevInterpolatedStyles[i - 1].opacity,
-                        translateY: spring(prevInterpolatedStyles[i - 1].translateY, {stiffness:150, damping:15})
+                        marginTop: spring(prevInterpolatedStyles[i - 1].marginTop, {stiffness:150, damping:20})
                       }
                   })
                 }
@@ -136,7 +136,7 @@ const MentorsPage = () => {
                     return (
                       <div className="mentors-grid">
                         {interpolatingStyles.map((style, i) => (
-                          i < selectedMentors.length && <MentorCard name={selectedMentors[i].name} image={selectedMentors[i].image} key={i} style={{opacity:style.opacity, translateY:style.translateY}}></MentorCard>
+                          i < selectedMentors.length && <MentorCard name={selectedMentors[i].name} image={selectedMentors[i].image} key={i} style={{opacity:style.opacity, marginTop:style.marginTop}}></MentorCard>
                         ))}
                       </div>
                     );
@@ -151,12 +151,6 @@ const MentorsPage = () => {
             </div>
         </Container>
       </div>
-      <Container>
-        <div className="flex-center organizing">
-          <img src={organizing} alt="" width="332" />
-        </div>
-      </Container>
-
       <div className="mtor-numbers diagonal-line">
         <svg
           className="seperator"
