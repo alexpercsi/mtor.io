@@ -45,7 +45,6 @@ steps:
       key:
         from_secret: mtor_io_ssh_key
       script:
-        - whoami
         - cd /tmp/deploy/public
         - rm -rf /var/www/staging.mtor.io/html/*
         - cp -rv ./* /var/www/staging.mtor.io/html/
