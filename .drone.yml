@@ -1,0 +1,72 @@
+kind: pipeline
+type: docker
+name: build and deploy
+
+steps:
+  - name: build and tar
+    image: node
+    commands:
+    - yarn
+    - yarn build
+    - tar cvf mtor.io.tar public/
+  - name: scp files
+    image: appleboy/drone-scp
+    settings:
+      host:
+        - mtor.io
+      user: drone
+      port: 3334
+      key:
+        from_secret: mtor_io_ssh_key
+      command_timeout: 2m
+      target: /tmp/
+      source:
+        - mtor.io.tar
+  - name: untar on server
+    image: appleboy/drone-ssh
+    settings:
+      host: mtor.io
+      username: drone
+      port: 3334
+      key:
+        from_secret: mtor_io_ssh_key
+      script:
+        - cd /tmp
+        - rm -rf deploy > /dev/null 2> /dev/null
+        - mkdir deploy
+        - tar xvf mtor.io.tar -C deploy/
+        - rm mtor.io.tar
+  - name: deploy to staging
+    image: appleboy/drone-ssh
+    settings:
+      host: mtor.io
+      username: drone
+      port: 3334
+      key:
+        from_secret: mtor_io_ssh_key
+      script:
+        - cd /tmp/deploy/public
+        - rm -rf /var/www/staging.mtor.io/html/*
+        - cp -rv ./* /var/www/staging.mtor.io/html/
+    when:
+      branch:
+        - staging
+  - name: deploy to prod
+    image: appleboy/drone-ssh
+    settings:
+      host: mtor.io
+      username: drone
+      port: 3334
+      key:
+        from_secret: mtor_io_ssh_key
+      script:
+        - cd /tmp/deploy/public
+        - rm -rf /var/www/mtor.io/html/*
+        - cp -rv ./* /var/www/mtor.io/html/
+    when:
+      branch:
+        - master
+trigger:
+  branch:
+  - master
+  - staging
